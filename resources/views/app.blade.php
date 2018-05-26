@@ -18,10 +18,10 @@
                             <div class="w-full">
                                 @yield ('top-content')
                             </div>
-                            <div class="w-full px-4">
+                            <div class="w-full md:w-3/5 lg:2/3 px-4">
                                 @yield ('left-content')
                             </div>
-                            <div class="w-full px-4">
+                            <div class="w-full md:w-2/5 lg:1/3 px-4">
                                 @section ('right-content')
                                     <div class="sidebar">
                                         @include ('_layouts.sidebar')

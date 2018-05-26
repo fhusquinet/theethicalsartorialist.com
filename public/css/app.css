@@ -798,7 +798,6 @@ button,
 }
 
 .card:hover .card__image__background {
-  height: 225px;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
