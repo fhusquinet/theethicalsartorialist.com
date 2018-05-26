@@ -13,8 +13,8 @@
             @include ('_layouts.navigation')
             <main class="main-content">
                 @section ('content')
-                    <div class="container -mx-4">
-                        <div class="flex flex-wrap">
+                    <div class="container px-4">
+                        <div class="flex flex-wrap -mx-4">
                             <div class="w-full">
                                 @yield ('top-content')
                             </div>
@@ -23,7 +23,9 @@
                             </div>
                             <div class="w-full px-4">
                                 @section ('right-content')
-                                    @include ('_layouts.sidebar')
+                                    <div class="sidebar">
+                                        @include ('_layouts.sidebar')
+                                    </div>
                                 @show
                             </div>
                         </div>

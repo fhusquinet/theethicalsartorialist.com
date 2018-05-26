@@ -700,8 +700,56 @@ button,
  * @import "components/forms";
  */
 
-.main-content {
+.main-content,
+.header-padding {
   padding-top: 70px;
+}
+
+.sidebar__about__background {
+  height: 125px;
+}
+
+.sidebar__about__avatar {
+  height: 80px;
+  width: 80px;
+}
+
+.sidebar__about__content {
+  padding-top: 40px;
+}
+
+.pin-bottom-100 {
+  bottom: 100%;
+}
+
+.pin-top-100 {
+  top: 100%;
+}
+
+.pin-center {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pin-center-b {
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pin-center-x {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pin-center-y {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /**

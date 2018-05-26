@@ -1,0 +1,26 @@
+.pin {
+    &-bottom-100 {
+        bottom: 100%;
+    }
+    &-top-100 {
+        top: 100%;
+    }
+    &-center {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-center-b {
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -50%);
+    }
+    &-center-x {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-center-y {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

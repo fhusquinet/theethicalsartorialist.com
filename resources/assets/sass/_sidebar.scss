@@ -1,0 +1,15 @@
+$avatar-size: 80px;
+.sidebar__about {
+    &__background {
+        height: 125px;
+    }
+
+    &__avatar {
+        height: $avatar-size;
+        width: $avatar-size;
+    }
+
+    &__content {
+        padding-top: $avatar-size / 2;
+    }
+}
