@@ -1,0 +1,55 @@
+.button {
+    @apply .bg-primary .text-white .py-4 .px-6 .text-center;
+
+    &:hover {
+        @apply .bg-primary-darker;
+    }
+
+    &--small {
+        @apply .py-2 .px-4;
+    }
+
+    &--big {
+        @apply .py-6 .px-8;
+    }
+
+    &--white {
+        @apply .bg-white .border .border-primary;
+
+        &:hover {
+            @apply .bg-primary .text-white;
+        }
+
+        &.button--secondary {
+            @apply .bg-white .border-secondary;
+
+            &:hover {
+                @apply .bg-secondary;
+            }
+        }
+    }
+
+    &--ghost {
+        @apply .bg-transparent .border .border-primary .text-primary;
+
+        &:hover {
+            @apply .bg-primary .text-white;
+        }
+
+        &.button--secondary {
+            @apply .bg-transparent .border-secondary .text-secondary;
+
+            &:hover {
+                @apply .bg-secondary .text-white;
+            }
+        }
+    }
+
+    &--secondary {
+        @apply .bg-secondary;
+
+        &:hover {
+            @apply .bg-secondary-dark;
+        }
+    }
+}

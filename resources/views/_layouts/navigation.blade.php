@@ -1,4 +1,4 @@
-<nav class="bg-white fixed pin-t pin-x shadow">
+<nav class="bg-white fixed pin-t pin-x shadow z-50">
     <div class="container px-4">
         <div class="flex items-center justify-between flex-wrap">
             <div class="lex items-center flex-no-shrink mr-4">
