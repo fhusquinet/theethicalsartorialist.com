@@ -1,6 +1,6 @@
-<div class="sidebar__newsletter relative mb-8">
+<div class="sidebar__newsletter relative mb-8 shadow">
     <div class="bg-secondary px-6 py-4 text-center">
-        <h3 class="text-white text-lg font-thin">Let's keep in touch</h3>
+        <h3 class="text-white text-xl font-thin">Let's keep in touch</h3>
     </div>
     <div class="bg-white p-6 text-center">
         <p class="text-sm font-thin text-grey mb-6">My subscribing to my newsletter I can send you new articles, guides and tips for some amazing ethical shopping!</p>

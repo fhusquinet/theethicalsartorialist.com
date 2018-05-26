@@ -1,7 +1,7 @@
-$avatar-size: 80px;
+$avatar-size: 100px;
 .sidebar__about {
     &__background {
-        height: 125px;
+        height: 175px;
     }
 
     &__avatar {
@@ -10,6 +10,6 @@ $avatar-size: 80px;
     }
 
     &__content {
-        padding-top: $avatar-size / 2;
+        padding-top: ($avatar-size / 2 - 10px);
     }
 }

@@ -13,7 +13,7 @@
             @include ('_layouts.navigation')
             <main class="main-content">
                 @section ('content')
-                    <div class="container px-4">
+                    <div class="container px-4 py-8">
                         <div class="flex flex-wrap -mx-4">
                             <div class="w-full">
                                 @yield ('top-content')
