@@ -1,4 +1,4 @@
-<div class="sidebar__about relative mb-4">
+<div class="sidebar__about relative mb-8">
     <a href="{{ url('/about') }}" class="absolute pin">About me</a>
     <div class="sidebar__about__background relative h-14">
         <div class="absolute pin bg-center bg-cover" style="background-image: url({{ asset('images/about-me-bg.jpg') }})"></div>

@@ -1,4 +1,4 @@
-<div class="sidebar__about relative mb-4">
+<div class="sidebar__newsletter relative mb-8">
     <div class="bg-secondary px-6 py-4 text-center">
         <h3 class="text-white text-lg font-thin">Let's keep in touch</h3>
     </div>
