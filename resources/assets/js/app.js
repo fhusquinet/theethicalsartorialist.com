@@ -17,3 +17,11 @@ window.Vue = require('vue');
 const app = new Vue({
     el: '#app'
 });
+
+/**
+ * Vanilla JavaScript window.onload event.
+ */
+import Blazy from 'blazy';
+window.onload = function() {
+    var blazy = new Blazy();
+}
