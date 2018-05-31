@@ -1,7 +1,7 @@
 <div class="sidebar__about relative mb-8 shadow hover:shadow-blur transition--fast">
     <a href="{{ url('/about') }}" class="absolute pin">About me</a>
     <div class="sidebar__about__background relative h-14">
-        <div class="absolute pin bg-center bg-cover b-lazy" data-src="{{ asset('images/about-me-bg.jpg') }}" style="background-image: url({{ asset('images/about-me-bg-blur.jpg') }})"></div>
+        <img class="card__image__background absolute transition--fast b-lazy img-cover" data-src="{{ asset('images/about-me-bg.jpg') }}" src="{{ asset('images/about-me-bg-blur.jpg') }}" />
         <img class="sidebar__about__avatar absolute pin-center-b pin-top-100 border-2 border-white bg-grey-lightest rounded-full b-lazy" data-src="{{ asset('images/avatar.jpg') }}" src="{{ asset('images/avatar-blur.jpg') }}" alt="About me" />
     </div>
     <div class="sidebar__about__content bg-white text-center">

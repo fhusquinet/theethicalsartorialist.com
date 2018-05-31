@@ -5,7 +5,33 @@
         }
     }
 
-    &__image__background {
+    &__image {
         height: 200px;
+    }
+}
+
+@screen md {
+    .card--big {
+        @apply .flex;
+        height: 300px;
+
+        .card__image,
+        .card__content-container {
+            @apply .flex-1;
+            height: 300px;
+        }
+
+        .card__image {
+            width: 300px;
+        }
+
+        .card__content-container {
+            @apply .relative;
+            padding-bottom: 50px;
+        }
+
+        .card__footer {
+            @apply .absolute .pin-b .pin-l .pin-r;
+        }
     }
 }

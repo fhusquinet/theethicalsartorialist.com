@@ -802,8 +802,50 @@ button,
           transform: scale(1.1);
 }
 
-.card__image__background {
+.card__image {
   height: 200px;
+}
+
+@media (min-width: 768px) {
+  .card--big {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 300px;
+  }
+
+  .card--big .card__image,
+  .card--big .card__content-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 300px;
+  }
+
+  .card--big .card__image {
+    width: 300px;
+  }
+
+  .card--big .card__content-container {
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .card--big .card__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.img-cover {
+  position: absolute;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pin-bottom-100 {
