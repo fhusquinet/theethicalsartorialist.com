@@ -15,7 +15,7 @@
                 @section ('content')
                     <div class="container px-4 py-8">
                         <div class="flex flex-wrap -mx-4">
-                            <div class="w-full">
+                            <div class="w-full px-4">
                                 @yield ('top-content')
                             </div>
                             <div class="w-full md:w-3/5 lg:2/3 px-4">
