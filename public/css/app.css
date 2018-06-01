@@ -718,6 +718,30 @@ button,
   padding-top: 40px;
 }
 
+.searching {
+  opacity: 0;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  pointer-events: none;
+}
+
+.searching--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searching__form {
+  max-width: 800px;
+  width: 100%;
+}
+
+.searching__form__input:focus,
+.searching__form__input:active,
+.searching__form__submit:focus,
+.searching__form__submit:active {
+  outline: none;
+}
+
 .button {
   background-color: #0189c9;
   color: #fff;

@@ -1004,6 +1004,7 @@ var app = new Vue({
 
 window.onload = function () {
   var blazy = new __WEBPACK_IMPORTED_MODULE_0_blazy___default.a();
+  __webpack_require__(41);
 };
 
 /***/ }),
@@ -13536,6 +13537,45 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */
+/***/ (function(module, exports) {
+
+var triggers = document.querySelectorAll('.js-trigger');
+
+var _loop = function _loop(i) {
+    console.log('Trigger found:', triggers[i]);
+    triggers[i].addEventListener('click', function () {
+        openElement(triggers[i]);
+    });
+};
+
+for (var i = 0; i < triggers.length; i++) {
+    _loop(i);
+}
+
+function openElement(trigger) {
+    var selector = trigger.dataset.element;
+    console.log(selector, event);
+    var element = document.querySelector('.' + selector);
+    if (!element) {
+        return;
+    }
+
+    if (element.classList.contains(selector + '--open')) {
+        console.log('Element found with class:', element);
+        element.classList.remove(selector + '--open');
+    } else {
+        console.log('Element found without class:', element);
+        element.classList.add(selector + '--open');
+    }
+}
 
 /***/ })
 /******/ ]);

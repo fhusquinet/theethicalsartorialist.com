@@ -24,4 +24,5 @@ const app = new Vue({
 import Blazy from 'blazy';
 window.onload = function() {
     var blazy = new Blazy();
+    require('./scripts/trigger');
 }

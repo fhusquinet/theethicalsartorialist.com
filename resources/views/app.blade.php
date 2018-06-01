@@ -8,7 +8,7 @@
         <title>The Ethical Sartorialist</title>
         <link rel="stylesheet" type="text/css" href="{{ asset( mix('css/app.css') ) }}" />
     </head>
-    <body class="bg-grey-lightest">
+    <body class="bg-grey-lightest relative">
         <div id="app">
             @include ('_layouts.navigation')
             <main class="main-content">
@@ -33,6 +33,7 @@
                 @show
             </main>
         </div>
+        @include ('_partials.search-form')
         <script type="text/javascript" src="{{ asset( mix('js/app.js') ) }}"></script>
     </body>
 </html>

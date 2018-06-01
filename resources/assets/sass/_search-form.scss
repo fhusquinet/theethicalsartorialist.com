@@ -1,0 +1,22 @@
+.searching {
+    @apply .opacity-0 .transition--fast;
+    pointer-events: none;
+
+    &--open {
+        @apply .opacity-100;
+        pointer-events: auto;
+    }
+
+    &__form {
+        max-width: 800px;
+        width: 100%;
+
+        &__input,
+        &__submit {
+            &:focus,
+            &:active {
+                outline: none;
+            } 
+        }
+    }
+}
