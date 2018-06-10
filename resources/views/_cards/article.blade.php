@@ -7,8 +7,6 @@
 
 <div class="card card--article @if ( $big ) card--big clearfix @endif {{ $class ?? '' }} group shadow hover:shadow-blur transition--fast relative">
     
-    <a href="{{ url('/article') }}" class="absolute pin">Article title</a>
-    
     <div class="card__image card--article__image relative overflow-hidden">
         <img class="card__image__background absolute transition--fast b-lazy img-cover" data-src="{{ asset('images/articles/'.$id.'.jpg') }}" src="{{ asset('images/articles/'.$id.'-blur.jpg') }}" />
         <div class="absolute pin bg-primary opacity-0 group-hover:opacity-50 transition--fast"></div>
@@ -37,5 +35,7 @@
             </div>
         </div>
     </div>
+
+    <a href="{{ url('/article') }}" class="absolute pin text-transparent">Article title</a>
 
 </div>

@@ -38,6 +38,7 @@
 @import "content";
 @import "sidebar";
 @import "search-form";
+@import "off-canvas-navigation";
 @import "components/buttons";
 @import "components/cards";
 @import "components/img-cover";
@@ -68,3 +69,14 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+#app {
+    @apply .transition--fast;
+
+    &.trigger--open {
+        filter: blur(5px);
+    }
+}
+
+.main-navigation {
+    transform: translateZ(0);
+}

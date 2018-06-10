@@ -742,6 +742,39 @@ button,
   outline: none;
 }
 
+.off-canvas-navigation {
+  opacity: 0;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  pointer-events: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.off-canvas-navigation--open {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.off-canvas-navigation ul li a:hover:after {
+  width: 100%;
+}
+
+.off-canvas-navigation ul li a:after {
+  background-color: #0189c9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  content: '';
+  height: 50%;
+  width: 0;
+  z-index: -1;
+}
+
 .button {
   background-color: #0189c9;
   color: #fff;
@@ -5770,6 +5803,21 @@ button,
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+#app {
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+#app.trigger--open {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.main-navigation {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
 
 @media (min-width: 576px) {
   .sm\:list-reset {

@@ -1,6 +1,26 @@
 let mix = require('laravel-mix');
 let tailwindcss = require('tailwindcss');
 let purgecss = require('laravel-mix-purgecss');
+let CompressionPlugin = require('compression-webpack-plugin');
+
+mix.webpackConfig({
+    plugins: [
+        new CompressionPlugin({
+            asset: "[path].gz[query]",
+            algorithm: "gzip",
+            test: /\.js$|\.css$|\.html$|\.svg$/,
+            threshold: 0,
+            minRatio: 0.6
+        }),
+        // new BundleAnalyzerPlugin()
+    ],
+    resolve: {
+        modules: [
+            path.resolve('./resources/assets/js'),
+            path.resolve('./node_modules')
+        ]
+    }
+});
 
 /*
  |--------------------------------------------------------------------------

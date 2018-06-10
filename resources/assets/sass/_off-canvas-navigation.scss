@@ -1,0 +1,25 @@
+.off-canvas-navigation {
+    @apply .opacity-0 .transition--fast;
+    pointer-events: none;
+    transform: scale(1.1);
+
+    &--open {
+        @apply .opacity-100;
+        pointer-events: auto;
+        transform: scale(1.0);
+    }
+
+    ul li a {
+        &:hover:after {
+            @apply .w-full;
+        }
+
+        &:after {
+            @apply .bg-primary .absolute .pin-l .pin-b .transition--fast;
+            content: '';
+            height: 50%;
+            width: 0;
+            z-index: -1;
+        }
+    }
+}

@@ -33,7 +33,8 @@
                 @show
             </main>
         </div>
-        @include ('_partials.search-form')
+        @include ('_layouts.search-form')
+        @include ('_layouts.off-canvas-navigation')
         <script type="text/javascript" src="{{ asset( mix('js/app.js') ) }}"></script>
     </body>
 </html>

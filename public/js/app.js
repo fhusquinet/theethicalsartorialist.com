@@ -443,10 +443,6 @@ var defaults = {
     return data;
   }],
 
-  /**
-   * A timeout in milliseconds to abort a request. If set to 0 (default) a
-   * timeout is not created.
-   */
   timeout: 0,
 
   xsrfCookieName: 'XSRF-TOKEN',
@@ -967,7 +963,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(10);
-module.exports = __webpack_require__(35);
+module.exports = __webpack_require__(36);
 
 
 /***/ }),
@@ -1004,7 +1000,7 @@ var app = new Vue({
 
 window.onload = function () {
   var blazy = new __WEBPACK_IMPORTED_MODULE_0_blazy___default.a();
-  __webpack_require__(41);
+  __webpack_require__(35);
 };
 
 /***/ }),
@@ -1166,7 +1162,7 @@ Axios.prototype.request = function request(config) {
     }, arguments[1]);
   }
 
-  config = utils.merge(defaults, {method: 'get'}, this.defaults, config);
+  config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
   config.method = config.method.toLowerCase();
 
   // Hook up interceptors middleware
@@ -1341,7 +1337,9 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
       if (utils.isArray(val)) {
         key = key + '[]';
-      } else {
+      }
+
+      if (!utils.isArray(val)) {
         val = [val];
       }
 
@@ -13536,22 +13534,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 /* 35 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */
-/***/ (function(module, exports) {
-
 var triggers = document.querySelectorAll('.js-trigger');
 
 var _loop = function _loop(i) {
     console.log('Trigger found:', triggers[i]);
-    triggers[i].addEventListener('click', function () {
+    triggers[i].addEventListener('click', function (event) {
+        event.preventDefault();
         openElement(triggers[i]);
     });
 };
@@ -13561,6 +13549,7 @@ for (var i = 0; i < triggers.length; i++) {
 }
 
 function openElement(trigger) {
+    var app = document.getElementById('app');
     var selector = trigger.dataset.element;
     console.log(selector, event);
     var element = document.querySelector('.' + selector);
@@ -13571,11 +13560,19 @@ function openElement(trigger) {
     if (element.classList.contains(selector + '--open')) {
         console.log('Element found with class:', element);
         element.classList.remove(selector + '--open');
+        app.classList.remove('trigger--open');
     } else {
         console.log('Element found without class:', element);
         element.classList.add(selector + '--open');
+        app.classList.add('trigger--open');
     }
 }
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
