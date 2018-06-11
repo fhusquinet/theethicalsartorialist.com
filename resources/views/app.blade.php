@@ -32,6 +32,7 @@
                     </div>
                 @show
             </main>
+            @include ('_layouts.footer')
         </div>
         @include ('_layouts.search-form')
         @include ('_layouts.off-canvas-navigation')

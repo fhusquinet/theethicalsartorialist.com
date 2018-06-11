@@ -1,4 +1,4 @@
 .img-cover {
-    @apply .absolute .block .min-w-full .min-h-full;
+    @apply .absolute .block .min-w-full .min-h-full .pin-center;
     object-fit: cover;
 }

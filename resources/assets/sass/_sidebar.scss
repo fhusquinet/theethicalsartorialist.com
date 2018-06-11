@@ -2,10 +2,12 @@ $avatar-size: 100px;
 .sidebar__about {
     &__background {
         height: 175px;
+        overflow: hidden;
     }
 
     &__avatar {
         height: $avatar-size;
+        top: 175px - ($avatar-size / 2);
         width: $avatar-size;
     }
 
