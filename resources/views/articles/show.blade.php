@@ -32,6 +32,34 @@
             <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
             <img class="block w-full b-lazy mb-2" data-src="{{ asset('images/articles/1.jpg') }}" src="{{ asset('images/articles/1-blur.jpg') }}" />
             <p class="font-thin text-grey text-sm text-center mb-8">Image description</p>
+            <div class="flex flex-wrap -mx-1">
+                @for ( $i = 0; $i < 4; $i++ )
+                    <div class="w-full md:w-1/2 p-1">
+                        <div class="square block">
+                            <img class="img-cover b-lazy" data-src="{{ asset('images/articles/1.jpg') }}" src="{{ asset('images/articles/1-blur.jpg') }}" />
+                        </div>
+                    </div>
+                @endfor
+            </div>
+            <p class="font-thin text-grey text-sm text-center mb-8">The gallery description</p>
+            <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
+            <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
+            <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
+            <div class="flex flex-wrap -mx-2">
+                <div class="mb-6 w-full md:w-1/2 lg:2/3 px-2">
+                    <img class="b-lazy w-full" data-src="{{ asset('images/lookbook.jpg') }}" src="{{ asset('images/lookbook-blur.jpg') }}" />
+                </div>
+                <div class="mb-6 w-full md:w-1/2 lg:2/3 px-2">
+                    <h2 class="font-thin text-grey-dark text-2xl mb-4 relative">
+                        Lookbook
+                    </h2>
+                    <ul>
+                        <li class="font-thin text-grey text-xl">Shirt: Howards</li>
+                        <li class="font-thin text-grey text-xl">Pants: Luxire</li>
+                        <li class="font-thin text-grey text-xl">Shoes: Buttero</li>
+                    </ul>
+                </div>
+            </div>
             <div class="pt-4 border-t border-grey-lighter">
                 <div class="text-left flex flex-wrap">
                     @for ( $i = 0; $i < 3; $i++ )

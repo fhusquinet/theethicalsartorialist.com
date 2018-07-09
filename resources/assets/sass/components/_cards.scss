@@ -1,7 +1,7 @@
 .card {
     &:hover {
         .card__image__background {
-            transform: scale(1.1);
+            transform: scale(1.1) translate(-50%, -50%);
         }
     }
 

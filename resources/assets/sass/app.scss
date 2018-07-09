@@ -80,3 +80,13 @@
 .main-navigation {
     transform: translateZ(0);
 }
+
+.square {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+}
