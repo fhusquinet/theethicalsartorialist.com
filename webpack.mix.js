@@ -38,6 +38,13 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.js') ],
+        uglify: {
+            uglifyOptions: {
+                compress: {
+                    drop_console: true
+                }
+            }
+        }
    })
    .purgeCss();
    // .browserSync({

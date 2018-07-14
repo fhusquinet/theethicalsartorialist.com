@@ -44,6 +44,7 @@
 @import "components/img-cover";
 @import "components/pin";
 @import "components/transitions";
+@import "vendor/baguetteBox.min.css";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
@@ -89,4 +90,8 @@
         display: block;
         padding-bottom: 100%;
     }
+}
+
+body.baguetteBox-open {
+    overflow-y: hidden;
 }

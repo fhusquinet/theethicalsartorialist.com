@@ -15,17 +15,19 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
     "blazy": "^1.8.2",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.5",
     "browser-sync-webpack-plugin": "^2.2.2",
     "compression-webpack-plugin": "^1.1.11",
-    "cross-env": "^5.1.4",
+    "cross-env": "^5.2.0",
     "laravel-mix": "^2.0",
     "vue": "^2.5.16",
     "webpack-bundle-analyzer": "^2.11.1"
   },
   "dependencies": {
+    "baguettebox.js": "^1.10.0",
     "glob-all": "^3.1.0",
     "laravel-mix-purgecss": "^1.0.5",
-    "npm": "^5.7.1"
+    "npm": "^5.7.1",
+    "tailwindcss": "^0.6.3"
   }
 }

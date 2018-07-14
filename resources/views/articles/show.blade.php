@@ -32,13 +32,13 @@
             <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
             <img class="block w-full b-lazy mb-2" data-src="{{ asset('images/articles/1.jpg') }}" src="{{ asset('images/articles/1-blur.jpg') }}" />
             <p class="font-thin text-grey text-sm text-center mb-8">Image description</p>
-            <div class="flex flex-wrap -mx-1">
+            <div class="flex flex-wrap -mx-1 gallery">
                 @for ( $i = 0; $i < 4; $i++ )
-                    <div class="w-full md:w-1/2 p-1">
+                    <a class="w-full md:w-1/2 p-1" href="{{ asset('images/articles/1.jpg') }}" data-caption="Image {{ $i }}">
                         <div class="square block">
                             <img class="img-cover b-lazy" data-src="{{ asset('images/articles/1.jpg') }}" src="{{ asset('images/articles/1-blur.jpg') }}" />
                         </div>
-                    </div>
+                    </a>
                 @endfor
             </div>
             <p class="font-thin text-grey text-sm text-center mb-8">The gallery description</p>

@@ -22,7 +22,11 @@ const app = new Vue({
  * Vanilla JavaScript window.onload event.
  */
 import Blazy from 'blazy';
+import baguetteBox from 'baguettebox.js';
+console.log(baguetteBox);
 window.onload = function() {
+    console.log('test');
     var blazy = new Blazy();
     require('./scripts/trigger');
+    baguetteBox.run('.gallery');
 }
