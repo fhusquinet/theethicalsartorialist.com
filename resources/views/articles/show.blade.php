@@ -46,18 +46,19 @@
             <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
             <p class="font-thin text-grey-dark text-base mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.</p>
             <div class="flex flex-wrap -mx-2">
-                <div class="mb-6 w-full md:w-1/2 lg:2/3 px-2">
+                <div class="mb-6 w-full md:w-1/2 px-2">
                     <img class="b-lazy w-full" data-src="{{ asset('images/lookbook.jpg') }}" src="{{ asset('images/lookbook-blur.jpg') }}" />
                 </div>
-                <div class="mb-6 w-full md:w-1/2 lg:2/3 px-2">
-                    <h2 class="font-thin text-grey-dark text-2xl mb-4 relative">
-                        Lookbook
+                <div class="mb-6 w-full md:w-1/2 pl-6 pr-2">
+                    <h2 class="font-black text-grey-darkest text-5xl mb-4 relative">
+                        Classic Lookbook
                     </h2>
-                    <ul>
-                        <li class="font-thin text-grey text-xl">Shirt: Howards</li>
-                        <li class="font-thin text-grey text-xl">Pants: Luxire</li>
-                        <li class="font-thin text-grey text-xl">Shoes: Buttero</li>
-                    </ul>
+                    <p class="font-thin text-xl text-grey-darker mb-4">
+                        Shirt:
+                        <span class="font-bold">Howards</span>
+                    </p>
+                    <p class="font-thin text-xl text-grey-darker mb-4">Pants: <span class="font-bold">Luxire</p>
+                    <p class="font-thin text-xl text-grey-darker mb-4">Shoes: <span class="font-bold">Buttero</p>
                 </div>
             </div>
             <div class="pt-4 border-t border-grey-lighter">
