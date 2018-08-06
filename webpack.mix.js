@@ -1,6 +1,8 @@
 let mix = require('laravel-mix');
-let tailwindcss = require('tailwindcss');
-let purgecss = require('laravel-mix-purgecss');
+
+let tailwindcss       = require('tailwindcss');
+let purgecss          = require('laravel-mix-purgecss');
+let glob              = require('glob-all');
 let CompressionPlugin = require('compression-webpack-plugin');
 
 mix.webpackConfig({
@@ -34,8 +36,8 @@ mix.webpackConfig({
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
-   .options({
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.js') ],
         uglify: {
@@ -45,8 +47,11 @@ mix.js('resources/assets/js/app.js', 'public/js')
                 }
             }
         }
-   })
-   .purgeCss();
-   // .browserSync({
-   //      proxy: process.env.APP_URL
-   // });
+    })
+    .browserSync({
+        proxy: process.env.APP_URL
+    })
+    .purgeCss({
+        whitelistPatterns: [/js.*/, /trigger.*/,]
+    })
+    .version();

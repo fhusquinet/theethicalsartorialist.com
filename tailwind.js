@@ -600,7 +600,11 @@ module.exports = {
     '6': '1.5rem',
     '8': '2rem',
     '10': '2.5rem',
-    '12': '3rem'
+    '12': '3rem',
+    '16': '4rem',
+    '20': '5rem',
+    '24': '6rem',
+    '32': '8rem'
   },
 
 
@@ -706,6 +710,11 @@ module.exports = {
   zIndex: {
     'auto': 'auto',
     '0': 0,
+    '1': 1,
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5,
     '10': 10,
     '20': 20,
     '30': 30,
@@ -732,6 +741,10 @@ module.exports = {
     '25': '.25',
     '50': '.5',
     '75': '.75',
+    '80': '.80',
+    '85': '.85',
+    '90': '.90',
+    '95': '.95',
     '100': '1',
   },
 
@@ -813,7 +826,7 @@ module.exports = {
     height: ['responsive'],
     leading: ['responsive'],
     lists: ['responsive'],
-    margin: ['responsive'],
+    margin: ['responsive', 'hover', 'group-hover'],
     maxHeight: ['responsive'],
     maxWidth: ['responsive'],
     minHeight: ['responsive'],

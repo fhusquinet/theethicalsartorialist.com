@@ -1,5 +1,6 @@
 .button {
     @apply .bg-primary .text-white .py-4 .px-6 .text-center;
+    text-decoration: none;
 
     &:hover {
         @apply .bg-primary-darker;
@@ -41,6 +42,14 @@
 
             &:hover {
                 @apply .bg-secondary .text-white;
+            }
+        }
+
+        &.button--white {
+            @apply .bg-transparent .border-white .text-white;
+
+            &:hover {
+                @apply .bg-white .text-secondary;
             }
         }
     }

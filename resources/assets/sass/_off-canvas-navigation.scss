@@ -1,12 +1,10 @@
 .off-canvas-navigation {
     @apply .opacity-0 .transition--fast;
     pointer-events: none;
-    transform: scale(1.1);
 
     &--open {
         @apply .opacity-100;
         pointer-events: auto;
-        transform: scale(1.0);
     }
 
     ul li a {

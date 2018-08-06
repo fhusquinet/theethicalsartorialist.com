@@ -15,5 +15,5 @@
             </ul>
         </div>
     </div>
-    <div class="overlay absolute pin bg-grey-darkest opacity-75 z-40"></div>
+    <div class="overlay absolute pin bg-grey-darkest opacity-95 z-40"></div>
 </div>

@@ -70,14 +70,6 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-#app {
-    @apply .transition--fast;
-
-    &.trigger--open {
-        filter: blur(5px);
-    }
-}
-
 .main-navigation {
     transform: translateZ(0);
 }
