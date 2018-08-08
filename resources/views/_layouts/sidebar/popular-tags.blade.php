@@ -1,4 +1,4 @@
-<div class="sidebar__popular-tags bg-white relative mb-8 p-6 shadow">
+<div class="sidebar__popular-tags bg-white relative rounded-lg mb-8 p-6 shadow">
     <h3 class="text-xl text-grey-dark font-thin mb-6 text-center">Popular tags</h3>
     <div class="text-left flex flex-wrap">
         @for ( $i = 0; $i < 15; $i++ )

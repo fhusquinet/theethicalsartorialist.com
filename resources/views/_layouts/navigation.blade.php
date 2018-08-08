@@ -17,14 +17,11 @@
                 </a>
             </div>
             <div class="items-center w-auto hidden lg:flex">
-                <a href="#responsive-header" class="block align-middle py-6 lg:inline-block lg:mt-0 text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
-                    Docs
+                <a href="{{ url('/') }}" class="block align-middle py-6 lg:inline-block lg:mt-0 font-thin text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
+                    Home
                 </a>
-                <a href="#responsive-header" class="block align-middle py-6 lg:inline-block lg:mt-0 text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
-                    Examples
-                </a>
-                <a href="#responsive-header" class="block align-middle py-6 lg:inline-block lg:mt-0 text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
-                    Blog
+                <a href="{{ url('/content') }}" class="block align-middle py-6 lg:inline-block lg:mt-0 font-thin text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
+                    Contact
                 </a>
                 <a href="#" class="py-4 ml-8 align-middle block lg:inline-block opacity-50 transition--fast hover:opacity-100 js-trigger" data-element="searching">
                     <img src="{{ asset('icons/search.svg') }}" class="h-5" alt="Menu" />

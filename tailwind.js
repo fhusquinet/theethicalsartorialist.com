@@ -74,7 +74,9 @@ let colors = {
 
   'secondary-accent-dark': '#2E112D',
   'secondary-accent': '#540032',
-  'secondary-accent-light': '#820333'
+  'secondary-accent-light': '#820333',
+
+  'body': '#f7f7f7', // Used for the body background
 }
 
 module.exports = {
@@ -253,6 +255,7 @@ module.exports = {
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
+    'text': 1.75,
     'loose': 2,
   },
 
@@ -685,11 +688,7 @@ module.exports = {
   */
 
   shadows: {
-    default: '0 0 8px 1px rgba(50,50,93,.07)',
-    'blur': '0 0 20px 2px rgba(50,50,93,.1)',
-    'md': '0 0 8px 0 rgba(50,50,93,.1), 0 0 4px 0 rgba(50,50,93,.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    default: '0 2px 0 0 #e5e5e5',
     'none': 'none',
   },
 
@@ -834,7 +833,7 @@ module.exports = {
     negativeMargin: ['responsive'],
     opacity: ['responsive', 'hover', 'group-hover'],
     overflow: ['responsive'],
-    padding: ['responsive'],
+    padding: ['responsive', 'hover', 'group-hover'],
     pointerEvents: ['responsive'],
     position: ['responsive'],
     resize: ['responsive'],
