@@ -31,61 +31,8 @@
 @section ('content')
     <div class="mb-10 bg-white rounded-lg shadow">
 
-        [article-section]
-            [article-text-container]
-                [article-h2 title="Introduction"]
-                [article-p]
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora obcaecati corporis aspernatur voluptate reprehenderit, ipsa dolor a nobis eos nisi aut tenetur, eligendi consequatur maiores totam molestiae optio non voluptatem dolorum porro vitae saepe! Enim non quam labore tempora, voluptatum ut consequatur? Velit vel quo, at nostrum voluptatem eum iure culpa. Quidem deleniti illum aliquam similique amet velit voluptatem possimus culpa perferendis aliquid nulla voluptate, quod asperiores omnis iure nemo?
-                [/article-p]
-                [article-p]
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus reprehenderit porro, voluptatem quasi non aut illo qui odit ratione dolorum.
-                [/article-p]
-            [/article-text-container]
-        [/article-section]
-
-        <div class="gallery">
-            <a href="{{ asset('images/articles/1.jpg') }}" data-caption="Image 1">
-                <img class="block w-full b-lazy mb-4" data-src="{{ asset('images/articles/1.jpg') }}" src="{{ asset('images/articles/1-blur.jpg') }}" />
-            </a>
+        {!! $article->text !!}
         
-        </div>
-        [article-image-description description="Image description"]
-        
-        [article-section]
-            [article-text-container]
-                [article-p]
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.
-                [/article-p]
-            [/article-text-container]
-        [/article-section]
-        
-        <img class="block w-full b-lazy mb-4" data-src="{{ asset('images/articles/1.jpg') }}" src="{{ asset('images/articles/1-blur.jpg') }}" />
-        [article-image-description description="Image description"]
-
-        <div class="flex flex-wrap gallery mb-4">
-            @for ( $i = 1; $i <= 4; $i++ )
-                <a class="w-full md:w-1/2 lg:w-1/4 mb-2 md:mb-0" href="{{ asset('images/articles/'.$i.'.jpg') }}" data-caption="Image {{ $i }}">
-                    <div class="square block">
-                        <img class="img-cover b-lazy" data-src="{{ asset('images/articles/'.$i.'.jpg') }}" src="{{ asset('images/articles/'.$i.'-blur.jpg') }}" />
-                    </div>
-                </a>
-            @endfor
-        </div>
-        [article-image-description description="Image description"]
-        
-        [article-section]
-            [article-text-container]
-                [article-p]
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.
-                [/article-p]
-                [article-p]
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.
-                [/article-p]
-                [article-p]
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quam, id nihil consequatur earum ducimus quia laudantium dicta non molestiae.
-                [/article-p]
-            [/article-text-container]
-        [/article-section]
         <div class="pt-4 px-8 border-t border-grey-lighter">
             <div class="text-left flex flex-wrap">
                 @for ( $i = 0; $i < 3; $i++ )

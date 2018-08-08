@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('article', function () {
-    return view('articles.show');
-});
+Route::get('{article}', 'ArticleController@show')->name('articles.show');
