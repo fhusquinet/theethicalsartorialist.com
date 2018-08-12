@@ -29,7 +29,7 @@
 @endsection
 
 @section ('content')
-    <div class="mb-10 bg-white rounded-lg shadow">
+    <div class="mb-10 md:pt-4 lg:pt-12 bg-white rounded-lg shadow">
 
         {!! $article->text !!}
         
