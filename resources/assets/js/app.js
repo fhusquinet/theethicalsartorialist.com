@@ -1,12 +1,11 @@
 /**
  * Vanilla JavaScript window.onload event.
  */
-import Blazy from 'blazy';
+import images from './images';
+window.addEventListener('load', images);
+
 import baguetteBox from 'baguettebox.js';
-
 window.onload = function() {
-
-    var blazy = new Blazy();
 
     baguetteBox.run('.gallery');
 

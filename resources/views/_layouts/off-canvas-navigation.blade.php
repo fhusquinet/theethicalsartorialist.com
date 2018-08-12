@@ -1,7 +1,7 @@
 <div class="off-canvas-navigation fixed pin z-50">
     <div class="container relative">
         <a href="#" class="absolute pin-t pin-l p-4 z-50 js-trigger" data-element="off-canvas-navigation">
-            <img src="{{ asset('icons/close--white.svg') }}" class="opacity-75 hover:opacity-100 h-8 w-8 transition--fast" />
+            <img src="{{ asset('icons/close--white.svg') }}" alt="Close Menu Icon" class="opacity-75 hover:opacity-100 h-8 w-8 transition--fast" />
         </a>
     </div>
     <div class="container">

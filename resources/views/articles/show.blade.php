@@ -1,7 +1,7 @@
 @extends ('app')
 
 @section ('top-content')
-    @component ('_components.header', ['image' => asset('images/articles/1.jpg'), 'imageBlur' => asset('images/articles/1-blur.jpg')])
+    @component ('_components.header', ['image' => 1])
         @slot ('title')
             Asket: Great basics for an ethical wardrobe
         @endslot
@@ -45,7 +45,7 @@
     <a href="{{ url('/about') }}" class="block no-underline mb-20 bg-white rounded-lg shadow">
         <div class="flex flex-wrap p-8">
             <div class="w-full sm:w-32 mb-4 sm:mb-0">
-                <img class="h-32 w-32 mx-auto block bg-grey-lightest rounded-full b-lazy" data-src="{{ asset('images/avatar.jpg') }}" src="{{ asset('images/avatar-blur.jpg') }}" alt="About me" />
+                [image id="3" class="h-32 w-32 mx-auto block bg-grey-lightest rounded-full"]
             </div>
             <div class="w-full sm:flex-1 sm:pl-8">
                 <h3 class="text-xl md:text-base font-thin text-grey-dark mb-4">About me</h3>

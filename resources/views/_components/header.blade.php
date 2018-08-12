@@ -13,6 +13,6 @@
         </div>
     </div>
     {{ $footer ?? '' }}
-    <img class="header__image img-cover b-lazy z-1" src="{{ $imageBlur }}" data-src="{{ $image }}" />
+    [image id="{{ $image }}" class="header__image img-cover"]
     <div class="header__mask absolute pin bg-black opacity-75 z-2"></div>
 </section>

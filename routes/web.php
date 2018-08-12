@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('{article}', 'ArticleController@show')->name('articles.show');
+Route::get('medias', function() {
+    site()->addImage('https://www.styleforum.net/content/type/61/id/2247191');
+});
+
+Route::get('articles/{article}', 'ArticleController@show')->name('articles.show');

@@ -8,7 +8,7 @@
 <div class="card card--article @if ( $big ) card--big clearfix @endif {{ $class ?? '' }} bg-white rounded-lg group shadow transition--fast relative">
     
     <div class="card__image card--article__image relative overflow-hidden rounded-t-lg">
-        <img class="card__image__background b-lazy img-cover" data-src="{{ asset('images/articles/'.$id.'.jpg') }}" src="{{ asset('images/articles/'.$id.'-blur.jpg') }}" />
+        [image id="3" class="card__image__background img-cover"]
         <div class="absolute pin-b pin-center-x  opacity-0 group-hover:opacity-100 w-full z-1 transition--fast text-center">
             <span class="block text-white font-thin text-sm opacity-75 pb-0 group-hover:pb-4 z-2 relative transition--fast">July 13th 2018</span>
         </div>

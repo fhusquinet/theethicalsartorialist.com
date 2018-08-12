@@ -24,6 +24,31 @@ class ShortcodeServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        app('shortcode')->register('gallery', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.gallery', [
+                'class'   => $shortcode->class,
+                'content' => $content
+            ])->render();
+        });
+
+        app('shortcode')->register('gallery-image', function($shortcode, $content, $compiler, $name, $viewData) {
+            $image = get_image($shortcode->id);
+            return view('_shortcodes.gallery-image', [
+                'image'      => $image,
+                'caption'    => $shortcode->caption,
+                'imageClass' => $shortcode->imageClass,
+                'class'      => $shortcode->class
+            ])->render();
+        });
+
+        app('shortcode')->register('image', function($shortcode, $content, $compiler, $name, $viewData) {
+            $image = get_image($shortcode->id);
+            return view('_shortcodes.image', [
+                'image' => $image,
+                'class' => $shortcode->class
+            ])->render();
+        });
+
         app('shortcode')->register('article-section', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.article.section', [
                 'content' => $content

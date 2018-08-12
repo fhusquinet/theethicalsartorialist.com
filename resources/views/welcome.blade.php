@@ -1,7 +1,7 @@
 @extends ('app')
 
 @section ('top-content')
-    @component ('_components.header', ['image' => asset('images/articles/1.jpg'), 'imageBlur' => asset('images/articles/1-blur.jpg')])
+    @component ('_components.header', ['image' => 2])
         @slot ('title')
             Asket: Great basics for an ethical wardrobe
         @endslot

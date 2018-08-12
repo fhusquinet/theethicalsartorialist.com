@@ -46,9 +46,9 @@ trait BaseMediaConversions
               ->sharpen(10);
 
         $this->addMediaConversion('blur')
-              ->width(50)
-              ->height(50)
-              ->blur(50);
+            ->width(50)
+            ->height(50)
+            ->blur(50);
     }
 
     /**
@@ -122,6 +122,7 @@ trait BaseMediaConversions
             return $this;
         }
         return $this->addMediaFromMixed($file)
+                    ->withResponsiveImages()
                     ->toMediaCollection('images');
     }
 
