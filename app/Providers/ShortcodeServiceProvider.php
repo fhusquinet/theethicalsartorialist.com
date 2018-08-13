@@ -36,7 +36,7 @@ class ShortcodeServiceProvider extends ServiceProvider
             return view('_shortcodes.gallery-image', [
                 'image'      => $image,
                 'caption'    => $shortcode->caption,
-                'imageClass' => $shortcode->imageClass,
+                'imageClass' => $shortcode->imageClass ?? 'b-lazy',
                 'class'      => $shortcode->class
             ])->render();
         });
@@ -45,7 +45,7 @@ class ShortcodeServiceProvider extends ServiceProvider
             $image = get_image($shortcode->id);
             return view('_shortcodes.image', [
                 'image' => $image,
-                'class' => $shortcode->class
+                'class' => $shortcode->class ?? 'b-lazy'
             ])->render();
         });
 

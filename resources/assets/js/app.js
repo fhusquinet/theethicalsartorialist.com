@@ -2,13 +2,13 @@
  * Vanilla JavaScript window.onload event.
  */
 import images from './images';
-window.addEventListener('load', images);
-
 import baguetteBox from 'baguettebox.js';
-window.onload = function() {
+import Blazy from 'blazy';
 
+window.addEventListener('load', function() {
     baguetteBox.run('.gallery');
-
+    
+    var blazy = new Blazy();
+    
     require('./scripts/trigger');
-
-}
+});
