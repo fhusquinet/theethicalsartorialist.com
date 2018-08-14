@@ -4,5 +4,5 @@
             @include ('_cards.article')
         </div>
     @endforeach
-    {{ $articles->links() }}
+    @include ('_partials.pagination', ['models' => $articles])
 </div>
