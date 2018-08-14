@@ -16,7 +16,9 @@ class HomepageController extends Controller
     public function show()
     {
         $featuredArticle = Article::where('is_featured', true)->latest()->first();
-        $articles = Article::latest()->get();
+        $articles = Article::latest()
+                            ->limit(10)
+                            ->get();
         
         return view('homepage', [
             'articles'        => $articles,

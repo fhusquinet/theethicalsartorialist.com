@@ -23,4 +23,19 @@ class ArticleController extends Controller
             'otherArticles' => $otherArticles
         ]);
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Article
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $articles = Article::latest()->paginate(2);
+
+        return view('articles.index', [
+            'articles' => $articles
+        ]);
+    }
 }

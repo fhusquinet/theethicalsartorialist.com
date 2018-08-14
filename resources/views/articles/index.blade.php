@@ -3,7 +3,7 @@
 @section ('top-content')
     @component ('_components.header')
         @slot ('title')
-            Articles with the tag "{{ $tag->name }}"
+            Latest articles
         @endslot
     @endcomponent
 @endsection

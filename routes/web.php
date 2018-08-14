@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomepageController@show')->name('homepage');
 
+Route::get('articles', 'ArticleController@index')->name('articles.index');
 Route::get('articles/{article}', 'ArticleController@show')->name('articles.show');
 
 Route::get('categories/{category}', 'CategoryController@show')->name('categories.show');

@@ -17,7 +17,9 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        $articles = Article::withCategory($category->id)->latest()->get();
+        $articles = Article::withCategory($category->id)
+                            ->latest()
+                            ->paginate(12);
 
         return view('categories.show', [
             'category' => $category,
