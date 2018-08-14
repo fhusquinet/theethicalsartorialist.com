@@ -1,4 +1,8 @@
 @php
+    if ( ! $models instanceof Illuminate\Contracts\Pagination\LengthAwarePaginator ) {
+        return;
+    }
+    
     $pages = collect(PaginateRoute::allUrls($models))
                 ->map(function($url, $index) {
                     $page = $index + 1;
