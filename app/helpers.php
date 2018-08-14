@@ -97,24 +97,20 @@ if ( ! function_exists('is_url') ) {
     }
 }
 
-if ( ! function_exists('image_srcset') ) {
-
+if ( ! function_exists('calculate_reading_time') ) {
 
     /*
      |--------------------------------------------------------------------------
-     | Image SRC SET.
+     | Calculate Reading Time
      |--------------------------------------------------------------------------
      |
-     | Return the full srcset of an image.
-     |
+     | Calculate the duration it will take for an average user to read
+     | the given text.
      */
-    function image_srcset($image)
+    function calculate_reading_time($text = '')
     {
-        return asset($image->getUrl('thumbnail')) . ' 150w, ' .
-            asset($image->getUrl('x-small')) . ' 300w, ' .
-            asset($image->getUrl('small')) . ' 450w, ' .
-            asset($image->getUrl('medium')) . ' 700w, ' .
-            asset($image->getUrl('large')) . ' 1024w, ' .
-            asset($image->getUrl('x-large')) . ' 1280w, ';
+        $text = app('shortcode')->compile($text); 
+        $wordCount = str_word_count( strip_tags($text) );
+        return floor($wordCount / 200);
     }
 }
