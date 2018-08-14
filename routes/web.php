@@ -11,12 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('medias', function() {
-    site()->addImage('https://www.styleforum.net/content/type/61/id/2247191');
-});
+Route::get('/', 'HomepageController@show')->name('homepage');
 
 Route::get('articles/{article}', 'ArticleController@show')->name('articles.show');

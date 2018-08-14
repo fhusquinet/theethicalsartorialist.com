@@ -114,6 +114,14 @@ trait BaseMediaConversions
     }
 
     /**
+     * Return the id of the first image stored.
+     */
+    public function getImageId()
+    {
+        return $this->getImage() ? $this->getImage()->id : null;
+    }
+
+    /**
      * Set the image
      */
     public function setImage($file)

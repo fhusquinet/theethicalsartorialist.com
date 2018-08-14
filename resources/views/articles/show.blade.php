@@ -1,24 +1,28 @@
 @extends ('app')
 
 @section ('top-content')
-    @component ('_components.header', ['image' => 1])
+    @component ('_components.header', ['image' => $article->getImageId()])
         @slot ('title')
-            Asket: Great basics for an ethical wardrobe
+            {{ $article->title }}
         @endslot
-        @slot ('subtitle')
-            <a href="{{ url('/category') }}" class="text-white no-underline hover:underline">Ethical Brands</a>
-        @endslot
+        
+        @if ( $article->category )
+            @slot ('subtitle')
+                <a href="{{ $article->category->getUrl() }}" class="text-white no-underline hover:underline">{{ $article->category->title }}</a>
+            @endslot
+        @endif
+
         @slot ('footer')
             <div class="relative z-10">
                 <div class="container py-4 px-8">
                     <div class="text-base md:text-sm font-thin text-grey clearfix">
                         <div class="relative z-10 block md:inline md:float-left transition--fast mb-4 md:mb-0">
                             <img class="inline h-4 w-4 align-text-top mr-1" src="{{ asset('icons/hourglass--white.svg') }}" alt="Article estimated reading time"/>
-                            6 min. read
+                            {{ $article->reading_time }} min. read
                         </div>
                         <div class="relative z-10 block md:inline md:float-right transition--fast">
                             <img class="inline h-4 w-4 align-text-top mr-1" src="{{ asset('icons/calendar--white.svg') }}" alt="Article date" />
-                            December 28th, 2017
+                            {{ $article->date() }}
                         </div>
                     </div>
                 </div>

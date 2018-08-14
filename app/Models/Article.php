@@ -16,6 +16,16 @@ class Article extends BaseModel
             $model->reading_time = calculate_reading_time($model->text);
         });
     }
+
+    public function getUrl()
+    {
+        return route('articles.show', $this);
+    }
+
+    public function date()
+    {
+        return $this->created_at->format('M jS, Y');
+    }
     
     public function categories()
     {

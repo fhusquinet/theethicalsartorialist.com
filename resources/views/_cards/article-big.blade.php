@@ -1,1 +1,0 @@
-@include ('_cards.article', ['big' => true, 'class' => 'mb-8'])
