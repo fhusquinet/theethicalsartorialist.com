@@ -40,6 +40,16 @@ class Article extends BaseModel
         return $this->belongsToMany(Category::class);
     }
 
+    public function scopeWhereLike($query, $column, $needle)
+    {
+        return $query->where($column, 'LIKE', '%'.$needle.'%');
+    }
+
+    public function scopeOrWhereLike($query, $column, $needle)
+    {
+        return $query->orWhere($column, 'LIKE', '%'.$needle.'%');
+    }
+
     public function scopeWithCategory($query, $id)
     {
         return $query->whereHas('categories', function ($subQuery) use ($id) {

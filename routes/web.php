@@ -20,3 +20,5 @@ Route::get('articles/{article}', 'ArticleController@show')->name('articles.show'
 Route::paginate('categories/{category}', 'CategoryController@show')->name('categories.show');
 
 Route::paginate('tags/{slug}', 'TagController@show')->name('tags.show');
+
+Route::paginate('/search', 'SearchController@show')->name('search');
