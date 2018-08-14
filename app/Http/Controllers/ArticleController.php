@@ -16,6 +16,11 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        return view('articles.show', ['article' => $article]);
+        $otherArticles = Article::where('id', '!=', $article->id)->limit(3)->get();
+
+        return view('articles.show', [
+            'article'       => $article,
+            'otherArticles' => $otherArticles
+        ]);
     }
 }

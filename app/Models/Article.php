@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
+use Spatie\Tags\HasTags;
+
 class Article extends BaseModel
 {
+    use HasTags;
 
     public static function boot()
     {

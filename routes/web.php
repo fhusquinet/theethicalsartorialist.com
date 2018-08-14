@@ -14,3 +14,5 @@
 Route::get('/', 'HomepageController@show')->name('homepage');
 
 Route::get('articles/{article}', 'ArticleController@show')->name('articles.show');
+
+Route::get('tags/{slug}', 'TagController@show')->name('tags.show');

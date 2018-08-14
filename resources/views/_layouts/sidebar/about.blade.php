@@ -1,6 +1,6 @@
-<div class="sidebar__about relative mb-8 shadow rounded-lg bg-white transition--fast">
+<div class="sidebar__about relative mb-8 shadow bg-white transition--fast">
     <a href="{{ url('/about') }}" class="absolute pin">About me</a>
-    <div class="sidebar__about__background relative overflow-hidden h-14 rounded-t-lg">
+    <div class="sidebar__about__background relative overflow-hidden h-14">
         <img class="card__image__background absolute transition--fast b-lazy img-cover" data-src="{{ asset('images/about-me-bg.jpg') }}" src="{{ asset('images/about-me-bg-blur.jpg') }}" />
     </div>
     <img class="sidebar__about__avatar absolute pin-center-x border-2 border-white bg-grey-lightest rounded-full b-lazy" data-src="{{ asset('images/avatar.jpg') }}" src="{{ asset('images/avatar-blur.jpg') }}" alt="About me" />

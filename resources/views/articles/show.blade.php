@@ -33,27 +33,36 @@
 @endsection
 
 @section ('content')
-    <div class="mb-10 md:pt-4 lg:pt-12 bg-white rounded-lg shadow">
+    <div class="mb-10 md:pt-4 lg:pt-12 bg-white shadow">
 
         {!! $article->text !!}
         
         <div class="pt-4 px-8 border-t border-grey-lighter">
             <div class="text-left flex flex-wrap">
-                @for ( $i = 0; $i < 3; $i++ )
-                    <a href="{{ url('/tag-' . $i) }}" class="flex px-4 py-2 text-base md:text-sm lg:text-xs bg-grey-lighter mb-4 mr-4 rounded no-underline text-grey-dark hover:bg-primary hover:text-white hover:shadow transition--fast">Tag {{ $i + 1 }}</a>
-                @endfor
+                @foreach ( $article->tags as $tag )
+                    <a href="{{ route('tags.show', $tag->slug) }}" class="flex px-4 py-2 text-base md:text-sm lg:text-xs bg-grey-lighter mb-4 mr-4 rounded no-underline text-grey-dark hover:bg-primary hover:text-white transition--fast">
+                        {{ $tag->name }}
+                    </a>
+                @endforeach
             </div>
         </div>
     </div>
 
-    <a href="{{ url('/about') }}" class="block no-underline mb-20 bg-white rounded-lg shadow">
+    <a href="{{ url('/about') }}" class="block no-underline mb-20 bg-white shadow">
         <div class="flex flex-wrap p-8">
             <div class="w-full sm:w-32 mb-4 sm:mb-0">
                 [image id="3" class="b-lazy h-32 w-32 mx-auto block bg-grey-lightest rounded-full"]
             </div>
             <div class="w-full sm:flex-1 sm:pl-8">
-                <h3 class="text-xl md:text-base font-thin text-grey-dark mb-4">About me</h3>
-                <p class="text-base md:text-sm font-thin text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ipsum ad delectus sunt ex aliquam possimus soluta libero. Consectetur consequuntur et aliquam non vitae consequatur eveniet quidem nulla officia tempore, ut minus expedita odit repellendus sapiente distinctio harum minima labore mollitia, quis adipisci. Ducimus quibusdam ea excepturi, error qui, vitae.
+                <h3 class="text-xl font-thin text-grey-dark mb-4">
+                    Florian Husquinet
+                </h3>
+                <p class="text-base font-thin text-grey mb-2">
+                    I am a web developer currently living in Liege, Belgium. My big resolution for 2018 was to have a more ethical wardrobe.
+                </p>
+                <p class="text-base font-thin text-grey mb-2">
+                    I will explore different options throughout my posts ranging from regular brands to second hand going into the details of what makes a garment ethical or not.
+                </p>
             </div>
         </div>
     </a>
@@ -62,8 +71,8 @@
         <h3 class="font-thin text-grey-dark text-2xl text-center mb-6 group-hover:text-primary transition--fast relative">
             Related articles
         </h3>
-        @for ( $i = 0; $i < 3; $i++ )
-            @include ('_cards.article', ['class' => 'mb-8'])
-        @endfor
+        @foreach ( $otherArticles as $otherArticle )
+            @include ('_cards.article', ['article' => $otherArticle, 'class' => 'mb-8'])
+        @endforeach
     </div>
 @endsection

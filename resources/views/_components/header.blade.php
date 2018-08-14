@@ -12,7 +12,12 @@
             </div>
         </div>
     </div>
+
     {{ $footer ?? '' }}
-    [image id="{{ $image }}" class="header__image img-cover b-lazy"]
+    
+    @isset ($image)
+        [image id="{{ $image }}" class="header__image img-cover b-lazy"]
+    @endisset
+    
     <div class="header__mask absolute pin bg-black opacity-75 z-2"></div>
 </section>
