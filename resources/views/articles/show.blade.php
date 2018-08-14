@@ -6,9 +6,9 @@
             {{ $article->title }}
         @endslot
         
-        @if ( $article->category )
+        @if ( $article->category() )
             @slot ('subtitle')
-                <a href="{{ $article->category->getUrl() }}" class="text-white no-underline hover:underline">{{ $article->category->title }}</a>
+                <a href="{{ $article->category()->getUrl() }}" class="text-white no-underline hover:underline">{{ $article->category()->title }}</a>
             @endslot
         @endif
 

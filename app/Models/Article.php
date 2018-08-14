@@ -29,10 +29,22 @@ class Article extends BaseModel
     {
         return $this->created_at->format('M jS, Y');
     }
+
+    public function category()
+    {
+        return $this->categories->first();
+    }
     
     public function categories()
     {
         return $this->belongsToMany(Category::class);
+    }
+
+    public function scopeWithCategory($query, $id)
+    {
+        return $query->whereHas('categories', function ($subQuery) use ($id) {
+            $subQuery->where('id', $id);
+        });
     }
 
 }

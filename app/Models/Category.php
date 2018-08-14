@@ -4,6 +4,11 @@ namespace App\Models;
 
 class Category extends BaseModel
 {
+
+    public function getUrl()
+    {
+        return route('categories.show', $this);
+    }
     
     public function articles()
     {

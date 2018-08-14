@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Faker\Factory;
 use Tests\TestCase;
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -53,6 +54,49 @@ class ArticleTest extends TestCase
         $this->assertEquals(
             $article->reading_time,
             2
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function an_article_can_retrieve_its_category()
+    {
+        $article = factory(Article::class)->create();
+        $category = factory(Category::class)->create();
+
+        $article->categories()->attach($category->id);
+        
+        $this->assertEquals(
+            $article->category()->id,
+            $category->id
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function the_articles_can_be_retrieve_by_category()
+    {
+        $articles1 = factory(Article::class, 5)->create();
+        $articles2 = factory(Article::class, 2)->create();
+        $category1 = factory(Category::class)->create();
+        $category2 = factory(Category::class)->create();
+
+        $articles1->each(function($article) use ($category1) {
+            $article->categories()->attach($category1->id);
+        });
+        $articles2->each(function($article) use ($category2) {
+            $article->categories()->attach($category2->id);
+        });
+        
+        $this->assertCount(
+            5,
+            Article::withCategory($category1->id)->get()
+        );
+        $this->assertCount(
+            2,
+            Article::withCategory($category2->id)->get()
         );
     }
 }
