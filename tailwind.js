@@ -56,13 +56,13 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
-  'primary-darkest': '#0F3C3C',
+  'primary-darkest': '#1B474B',
   'primary-darker': '#1F7A7C',
-  'primary-dark': '#29A0A2',
-  'primary': '#2fb9bc',
-  'primary-light': '#32C6C9',
+  'primary-dark': '#276B72',
+  'primary': '#348F99',
+  'primary-light': '#3FB4C0',
   'primary-lighter': '#35D3D6',
-  'primary-lightest': '#3DF1F5',
+  'primary-lightest': '#65C4CE',
 
   'secondary-darkest': '#800d07',
   'secondary-darker': '#a7170f',

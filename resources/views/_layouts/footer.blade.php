@@ -1,4 +1,4 @@
-<footer class="main-footer bg-primary-darkest">
+<footer class="main-footer bg-primary-darker">
     <div class="container px-4 py-8">
         <div class="flex flex-wrap md:inline-flex -mx-4">
             <div class="flex-1 w-full sm:w-1/2 md:w-auto px-4">
