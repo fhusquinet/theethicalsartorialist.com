@@ -2,15 +2,23 @@
 
 namespace App\Models;
 
+use App\Scopes\PublishedScope;
 use Spatie\Tags\HasTags;
 
 class Article extends BaseModel
 {
     use HasTags;
 
-    public static function boot()
+    /**
+     * The "booting" method of the model.
+     *
+     * @return void
+     */
+    protected static function boot()
     {
         parent::boot();
+        
+        static::addGlobalScope(new PublishedScope);
 
         self::creating(function ($model) {
             $model->reading_time = calculate_reading_time($model->text);
