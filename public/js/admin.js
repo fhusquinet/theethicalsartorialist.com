@@ -68,7 +68,14 @@
 /***/ "./resources/assets/js/admin.js":
 /***/ (function(module, exports) {
 
-//
+window.onload = function () {
+    var alerts = document.querySelectorAll(".alert");
+    for (var i = 0; i < alerts.length; i++) {
+        alerts[i].onclick = function () {
+            this.parentNode.removeChild(this);
+        };
+    }
+};
 
 /***/ }),
 

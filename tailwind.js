@@ -78,6 +78,12 @@ let colors = {
 
   'alert': '#e74c3c',
 
+  'success-dark': '#1cb841',
+  'success-light': '#e1ffe4',
+
+  'error-dark': '#ca3c3c',
+  'error-light': '#ffe1e1',
+
   'body': '#f7f7f7', // Used for the body background
 }
 
@@ -824,7 +830,7 @@ module.exports = {
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],
-    cursor: ['responsive'],
+    cursor: ['responsive', 'hover'],
     display: ['responsive'],
     flexbox: ['responsive'],
     float: ['responsive'],

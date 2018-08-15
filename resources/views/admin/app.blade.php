@@ -9,10 +9,25 @@
         <link rel="stylesheet" type="text/css" href="{{ asset( mix('css/admin.css') ) }}" />
     </head>
     <body class="bg-body relative">
+
+        @if ( session('success') )
+            <div class="fixed pin-t pin-r pt-8 pr-8 z-20">
+                <div class="alert hover:cursor-pointer p-6 bg-success-light shadow">
+                    <p class="font-thin text-success-dark">{{ session('success') }}</p>
+                </div>
+            </div>
+        @endif
+        @if ( session('error') )
+            <div class="fixed pin-t pin-r pt-8 pr-8 z-20">
+                <div class="alert hover:cursor-pointer p-6 bg-error-light shadow">
+                    <p class="font-thin text-error-dark">{{ session('error') }}</p>
+                </div>
+            </div>
+        @endif
         
         <div class="admin flex flex-row min-h-screen">
             @include ('admin._layouts.sidebar')
-            <div class="admin__content relative z-1 flex-grow w-full min-h-full"> 
+            <div class="admin__content relative z-0 flex-grow w-full min-h-full"> 
                 <div class="w-full bg-white px-8 py-6 border-b border-grey-lightest">
                     <div class="text-base font-normal uppercase text-grey-dark">
                         @yield ('title')

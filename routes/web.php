@@ -30,5 +30,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
     Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function () {
         Route::get('/', 'DashboardController@show')->name('show');
+        Route::resource('articles', 'ArticleController')->parameters([
+            'articles' => 'admin_article'
+        ]);
+        Route::get('articles/{admin_article}/restore', 'ArticleController@restore')->name('articles.restore');
     });
 });

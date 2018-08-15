@@ -8,9 +8,10 @@
             'icon'   => asset('icons/admin/dashboard.svg')
         ])
         @include ('admin._layouts.sidebar.link', [
-            'url'  => route('admin.show'),
-            'text' => 'Articles',
-            'icon' => asset('icons/admin/articles.svg')
+            'url'   => route('admin.articles.index'),
+            'routes' => ['admin.articles.index', 'admin.articles.edit'],
+            'text'  => 'Articles',
+            'icon'  => asset('icons/admin/articles.svg')
         ])
         @include ('admin._layouts.sidebar.link', [
             'url'  => route('admin.show'),

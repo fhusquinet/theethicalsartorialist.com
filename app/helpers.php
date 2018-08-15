@@ -130,3 +130,19 @@ if ( ! function_exists('get_latest_articles') )
         return \App\Models\Article::latest()->limit($limit)->get();
     }
 }
+
+if ( ! function_exists('is_date') )
+{
+
+    /*
+     |--------------------------------------------------------------------------
+     | Is date
+     |--------------------------------------------------------------------------
+     |
+     | Check if the value given is a carbon instance
+     */
+    function is_date($date)
+    {
+        return $date instanceof Carbon\Carbon;
+    }
+}

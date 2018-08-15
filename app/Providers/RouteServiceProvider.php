@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
+use App\Models\Article;
+
 use PaginateRoute;
 
 class RouteServiceProvider extends ServiceProvider
@@ -26,6 +28,13 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         PaginateRoute::registerMacros();
+
+        Route::bind('admin_article', function ($value) {
+            return Article::withoutGlobalScopes()
+                        ->where('slug', $value)
+                        ->withTrashed()
+                        ->first() ?? abort(404);
+        });
 
         parent::boot();
     }
