@@ -71,8 +71,6 @@
         <h3 class="font-thin text-grey-dark text-2xl text-center mb-6 group-hover:text-primary transition--fast relative">
             Related articles
         </h3>
-        @foreach ( $otherArticles as $otherArticle )
-            @include ('_cards.article', ['article' => $otherArticle, 'class' => 'mb-8'])
-        @endforeach
+        @include ('_partials.articles-list', ['articles' => $otherArticles])
     </div>
 @endsection
