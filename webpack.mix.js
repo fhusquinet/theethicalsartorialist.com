@@ -52,6 +52,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
         proxy: process.env.APP_URL
     })
     .purgeCss({
-        whitelistPatterns: [/js.*/, /trigger.*/, /.*--open/]
+        whitelistPatterns: [/js.*/, /trigger.*/, /.*--open/, /baguetteBox.*/, /visible/],
+        whitelistPatternsChildren: [/baguetteBox.*/]
     })
     .version();
