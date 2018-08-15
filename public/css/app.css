@@ -1003,26 +1003,6 @@ table {
   pointer-events: auto;
 }
 
-.off-canvas-navigation ul li a:hover:after {
-  width: 100%;
-  background-color: #3fb4c0;
-  left: 0;
-}
-
-.off-canvas-navigation ul li a:after {
-  background-color: #fff;
-  position: absolute;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  content: '';
-  height: 2px;
-  margin-top: -1px;
-  left: 50%;
-  top: 50%;
-  width: 0;
-  z-index: -1;
-}
-
 .button {
   background-color: #348f99;
   color: #fff;
