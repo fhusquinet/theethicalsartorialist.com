@@ -1,9 +1,9 @@
 @extends ('app')
 
 @section ('top-content')
-    @component ('_components.header', ['image' => $category->getImageId()])
+    @component ('_components.header', ['padding' => 'py-16', 'image' => $category->getImageId()])
         @slot ('title')
-            Articles with the category "{{ $category->title }}"
+            {{ $category->title }}
         @endslot
     @endcomponent
 @endsection

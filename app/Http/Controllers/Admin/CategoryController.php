@@ -118,8 +118,15 @@ class CategoryController extends Controller
 
     public function save($category, $data)
     {
+        $image = $data['image'] ?? null;
+        unset($data['image']);
+
         $category->fill($data);
         $category->save();
+
+        if ( $image ) {
+            $category->replaceImage($image);
+        }
 
         return $category;
     }

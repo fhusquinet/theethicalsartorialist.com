@@ -1,5 +1,5 @@
 <section class="header relative overflow-hidden">
-    <div class="py-32">
+    <div class="{{ $padding ?? 'py-32' }}">
         <div class="container px-8">
             <div class="header__content relative z-10">
                 <div class="text-center">

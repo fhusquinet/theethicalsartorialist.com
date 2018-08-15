@@ -6,6 +6,11 @@
         'title' => [
             'label' => 'Title',
             'type'  => 'text'
-        ]
+        ],
+        'image' => [
+            'label' => 'Image',
+            'type'  => 'image',
+            'current' => $category->getImageUrl()
+        ],
     ]
 ], $options))
