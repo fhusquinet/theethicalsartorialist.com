@@ -4561,6 +4561,10 @@ table {
   padding: 1px;
 }
 
+.p-05 {
+  padding: .1rem;
+}
+
 .p-navigation {
   padding: 70px;
 }
@@ -4703,6 +4707,16 @@ table {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-05 {
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+}
+
+.px-05 {
+  padding-left: .1rem;
+  padding-right: .1rem;
 }
 
 .py-navigation {
@@ -4939,6 +4953,22 @@ table {
   padding-left: 1px;
 }
 
+.pt-05 {
+  padding-top: .1rem;
+}
+
+.pr-05 {
+  padding-right: .1rem;
+}
+
+.pb-05 {
+  padding-bottom: .1rem;
+}
+
+.pl-05 {
+  padding-left: .1rem;
+}
+
 .pt-navigation {
   padding-top: 70px;
 }
@@ -5009,6 +5039,10 @@ table {
 
 .group:hover .group-hover\:p-px {
   padding: 1px;
+}
+
+.group:hover .group-hover\:p-05 {
+  padding: .1rem;
 }
 
 .group:hover .group-hover\:p-navigation {
@@ -5153,6 +5187,16 @@ table {
 .group:hover .group-hover\:px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.group:hover .group-hover\:py-05 {
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+}
+
+.group:hover .group-hover\:px-05 {
+  padding-left: .1rem;
+  padding-right: .1rem;
 }
 
 .group:hover .group-hover\:py-navigation {
@@ -5389,6 +5433,22 @@ table {
   padding-left: 1px;
 }
 
+.group:hover .group-hover\:pt-05 {
+  padding-top: .1rem;
+}
+
+.group:hover .group-hover\:pr-05 {
+  padding-right: .1rem;
+}
+
+.group:hover .group-hover\:pb-05 {
+  padding-bottom: .1rem;
+}
+
+.group:hover .group-hover\:pl-05 {
+  padding-left: .1rem;
+}
+
 .group:hover .group-hover\:pt-navigation {
   padding-top: 70px;
 }
@@ -5459,6 +5519,10 @@ table {
 
 .hover\:p-px:hover {
   padding: 1px;
+}
+
+.hover\:p-05:hover {
+  padding: .1rem;
 }
 
 .hover\:p-navigation:hover {
@@ -5603,6 +5667,16 @@ table {
 .hover\:px-px:hover {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.hover\:py-05:hover {
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+}
+
+.hover\:px-05:hover {
+  padding-left: .1rem;
+  padding-right: .1rem;
 }
 
 .hover\:py-navigation:hover {
@@ -5837,6 +5911,22 @@ table {
 
 .hover\:pl-px:hover {
   padding-left: 1px;
+}
+
+.hover\:pt-05:hover {
+  padding-top: .1rem;
+}
+
+.hover\:pr-05:hover {
+  padding-right: .1rem;
+}
+
+.hover\:pb-05:hover {
+  padding-bottom: .1rem;
+}
+
+.hover\:pl-05:hover {
+  padding-left: .1rem;
 }
 
 .hover\:pt-navigation:hover {
@@ -10074,6 +10164,10 @@ body.baguetteBox-open {
     padding: 1px;
   }
 
+  .sm\:p-05 {
+    padding: .1rem;
+  }
+
   .sm\:p-navigation {
     padding: 70px;
   }
@@ -10216,6 +10310,16 @@ body.baguetteBox-open {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .sm\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .sm\:py-navigation {
@@ -10452,6 +10556,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .sm\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .sm\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .sm\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .sm\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .sm\:pt-navigation {
     padding-top: 70px;
   }
@@ -10522,6 +10642,10 @@ body.baguetteBox-open {
 
   .group:hover .sm\:group-hover\:p-px {
     padding: 1px;
+  }
+
+  .group:hover .sm\:group-hover\:p-05 {
+    padding: .1rem;
   }
 
   .group:hover .sm\:group-hover\:p-navigation {
@@ -10666,6 +10790,16 @@ body.baguetteBox-open {
   .group:hover .sm\:group-hover\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .group:hover .sm\:group-hover\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .sm\:group-hover\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .group:hover .sm\:group-hover\:py-navigation {
@@ -10902,6 +11036,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .group:hover .sm\:group-hover\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .group:hover .sm\:group-hover\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .group:hover .sm\:group-hover\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .sm\:group-hover\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .group:hover .sm\:group-hover\:pt-navigation {
     padding-top: 70px;
   }
@@ -10972,6 +11122,10 @@ body.baguetteBox-open {
 
   .sm\:hover\:p-px:hover {
     padding: 1px;
+  }
+
+  .sm\:hover\:p-05:hover {
+    padding: .1rem;
   }
 
   .sm\:hover\:p-navigation:hover {
@@ -11116,6 +11270,16 @@ body.baguetteBox-open {
   .sm\:hover\:px-px:hover {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:hover\:py-05:hover {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .sm\:hover\:px-05:hover {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .sm\:hover\:py-navigation:hover {
@@ -11350,6 +11514,22 @@ body.baguetteBox-open {
 
   .sm\:hover\:pl-px:hover {
     padding-left: 1px;
+  }
+
+  .sm\:hover\:pt-05:hover {
+    padding-top: .1rem;
+  }
+
+  .sm\:hover\:pr-05:hover {
+    padding-right: .1rem;
+  }
+
+  .sm\:hover\:pb-05:hover {
+    padding-bottom: .1rem;
+  }
+
+  .sm\:hover\:pl-05:hover {
+    padding-left: .1rem;
   }
 
   .sm\:hover\:pt-navigation:hover {
@@ -15546,6 +15726,10 @@ body.baguetteBox-open {
     padding: 1px;
   }
 
+  .md\:p-05 {
+    padding: .1rem;
+  }
+
   .md\:p-navigation {
     padding: 70px;
   }
@@ -15688,6 +15872,16 @@ body.baguetteBox-open {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .md\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .md\:py-navigation {
@@ -15924,6 +16118,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .md\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .md\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .md\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .md\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .md\:pt-navigation {
     padding-top: 70px;
   }
@@ -15994,6 +16204,10 @@ body.baguetteBox-open {
 
   .group:hover .md\:group-hover\:p-px {
     padding: 1px;
+  }
+
+  .group:hover .md\:group-hover\:p-05 {
+    padding: .1rem;
   }
 
   .group:hover .md\:group-hover\:p-navigation {
@@ -16138,6 +16352,16 @@ body.baguetteBox-open {
   .group:hover .md\:group-hover\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .group:hover .md\:group-hover\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .md\:group-hover\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .group:hover .md\:group-hover\:py-navigation {
@@ -16374,6 +16598,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .group:hover .md\:group-hover\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .group:hover .md\:group-hover\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .group:hover .md\:group-hover\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .md\:group-hover\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .group:hover .md\:group-hover\:pt-navigation {
     padding-top: 70px;
   }
@@ -16444,6 +16684,10 @@ body.baguetteBox-open {
 
   .md\:hover\:p-px:hover {
     padding: 1px;
+  }
+
+  .md\:hover\:p-05:hover {
+    padding: .1rem;
   }
 
   .md\:hover\:p-navigation:hover {
@@ -16588,6 +16832,16 @@ body.baguetteBox-open {
   .md\:hover\:px-px:hover {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:hover\:py-05:hover {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .md\:hover\:px-05:hover {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .md\:hover\:py-navigation:hover {
@@ -16822,6 +17076,22 @@ body.baguetteBox-open {
 
   .md\:hover\:pl-px:hover {
     padding-left: 1px;
+  }
+
+  .md\:hover\:pt-05:hover {
+    padding-top: .1rem;
+  }
+
+  .md\:hover\:pr-05:hover {
+    padding-right: .1rem;
+  }
+
+  .md\:hover\:pb-05:hover {
+    padding-bottom: .1rem;
+  }
+
+  .md\:hover\:pl-05:hover {
+    padding-left: .1rem;
   }
 
   .md\:hover\:pt-navigation:hover {
@@ -21018,6 +21288,10 @@ body.baguetteBox-open {
     padding: 1px;
   }
 
+  .lg\:p-05 {
+    padding: .1rem;
+  }
+
   .lg\:p-navigation {
     padding: 70px;
   }
@@ -21160,6 +21434,16 @@ body.baguetteBox-open {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .lg\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .lg\:py-navigation {
@@ -21396,6 +21680,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .lg\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .lg\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .lg\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .lg\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .lg\:pt-navigation {
     padding-top: 70px;
   }
@@ -21466,6 +21766,10 @@ body.baguetteBox-open {
 
   .group:hover .lg\:group-hover\:p-px {
     padding: 1px;
+  }
+
+  .group:hover .lg\:group-hover\:p-05 {
+    padding: .1rem;
   }
 
   .group:hover .lg\:group-hover\:p-navigation {
@@ -21610,6 +21914,16 @@ body.baguetteBox-open {
   .group:hover .lg\:group-hover\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .group:hover .lg\:group-hover\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .lg\:group-hover\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .group:hover .lg\:group-hover\:py-navigation {
@@ -21846,6 +22160,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .group:hover .lg\:group-hover\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .group:hover .lg\:group-hover\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .group:hover .lg\:group-hover\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .lg\:group-hover\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .group:hover .lg\:group-hover\:pt-navigation {
     padding-top: 70px;
   }
@@ -21916,6 +22246,10 @@ body.baguetteBox-open {
 
   .lg\:hover\:p-px:hover {
     padding: 1px;
+  }
+
+  .lg\:hover\:p-05:hover {
+    padding: .1rem;
   }
 
   .lg\:hover\:p-navigation:hover {
@@ -22060,6 +22394,16 @@ body.baguetteBox-open {
   .lg\:hover\:px-px:hover {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:hover\:py-05:hover {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .lg\:hover\:px-05:hover {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .lg\:hover\:py-navigation:hover {
@@ -22294,6 +22638,22 @@ body.baguetteBox-open {
 
   .lg\:hover\:pl-px:hover {
     padding-left: 1px;
+  }
+
+  .lg\:hover\:pt-05:hover {
+    padding-top: .1rem;
+  }
+
+  .lg\:hover\:pr-05:hover {
+    padding-right: .1rem;
+  }
+
+  .lg\:hover\:pb-05:hover {
+    padding-bottom: .1rem;
+  }
+
+  .lg\:hover\:pl-05:hover {
+    padding-left: .1rem;
   }
 
   .lg\:hover\:pt-navigation:hover {
@@ -26490,6 +26850,10 @@ body.baguetteBox-open {
     padding: 1px;
   }
 
+  .xl\:p-05 {
+    padding: .1rem;
+  }
+
   .xl\:p-navigation {
     padding: 70px;
   }
@@ -26632,6 +26996,16 @@ body.baguetteBox-open {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .xl\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .xl\:py-navigation {
@@ -26868,6 +27242,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .xl\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .xl\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .xl\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .xl\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .xl\:pt-navigation {
     padding-top: 70px;
   }
@@ -26938,6 +27328,10 @@ body.baguetteBox-open {
 
   .group:hover .xl\:group-hover\:p-px {
     padding: 1px;
+  }
+
+  .group:hover .xl\:group-hover\:p-05 {
+    padding: .1rem;
   }
 
   .group:hover .xl\:group-hover\:p-navigation {
@@ -27082,6 +27476,16 @@ body.baguetteBox-open {
   .group:hover .xl\:group-hover\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .group:hover .xl\:group-hover\:py-05 {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .xl\:group-hover\:px-05 {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .group:hover .xl\:group-hover\:py-navigation {
@@ -27318,6 +27722,22 @@ body.baguetteBox-open {
     padding-left: 1px;
   }
 
+  .group:hover .xl\:group-hover\:pt-05 {
+    padding-top: .1rem;
+  }
+
+  .group:hover .xl\:group-hover\:pr-05 {
+    padding-right: .1rem;
+  }
+
+  .group:hover .xl\:group-hover\:pb-05 {
+    padding-bottom: .1rem;
+  }
+
+  .group:hover .xl\:group-hover\:pl-05 {
+    padding-left: .1rem;
+  }
+
   .group:hover .xl\:group-hover\:pt-navigation {
     padding-top: 70px;
   }
@@ -27388,6 +27808,10 @@ body.baguetteBox-open {
 
   .xl\:hover\:p-px:hover {
     padding: 1px;
+  }
+
+  .xl\:hover\:p-05:hover {
+    padding: .1rem;
   }
 
   .xl\:hover\:p-navigation:hover {
@@ -27532,6 +27956,16 @@ body.baguetteBox-open {
   .xl\:hover\:px-px:hover {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:hover\:py-05:hover {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+  }
+
+  .xl\:hover\:px-05:hover {
+    padding-left: .1rem;
+    padding-right: .1rem;
   }
 
   .xl\:hover\:py-navigation:hover {
@@ -27766,6 +28200,22 @@ body.baguetteBox-open {
 
   .xl\:hover\:pl-px:hover {
     padding-left: 1px;
+  }
+
+  .xl\:hover\:pt-05:hover {
+    padding-top: .1rem;
+  }
+
+  .xl\:hover\:pr-05:hover {
+    padding-right: .1rem;
+  }
+
+  .xl\:hover\:pb-05:hover {
+    padding-bottom: .1rem;
+  }
+
+  .xl\:hover\:pl-05:hover {
+    padding-left: .1rem;
   }
 
   .xl\:hover\:pt-navigation:hover {

@@ -598,6 +598,7 @@ module.exports = {
   padding: {
     'px': '1px',
     '0': '0',
+    '05': '0.1rem',
     '1': '0.25rem',
     '2': '0.5rem',
     '3': '0.75rem',

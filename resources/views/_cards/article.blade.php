@@ -18,10 +18,12 @@
             <h2 class="card__content__title font-normal text-grey-dark text-xl mb-2 group-hover:text-grey-darker transition--fast relative">
                 {{ $article->title }}
             </h2>
-            <p class="font-thin text-grey-dark text-base md:text-sm mb-6 leading-normal">
-                {{ $article->preview_text }}
+            <p class="font-thin text-grey-dark text-base md:text-sm mb-4 leading-normal">
+                {{ $article->preview_text }} <a href="{{ $article->getUrl() }}" class="ml-2 inline-block no-underline text-primary"><span class="inline-block pb-05 border-b border-primary">Read more</span> ></a>
             </p>
-            <a href="{{ $article->getUrl() }}" class="mb-4 inline-block no-underline text-white bg-primary group-hover:bg-primary-dark py-2 px-4 transition--fast">Read more</a>
+            <p class="font-thin text-grey-light mb-4 text-sm md:text-xs">
+                {{ $article->date() }}
+            </p>
         </div>
     </div>
 
