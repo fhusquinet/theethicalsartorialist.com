@@ -16,7 +16,8 @@ class HomepageController extends Controller
     public function show()
     {
         $featuredArticle = Article::where('is_featured', true)->latest()->first();
-        $articles = Article::latest()
+        $articles = Article::where('id', '!=', $featuredArticle->id)
+                            ->latest()
                             ->limit(10)
                             ->get();
         

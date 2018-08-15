@@ -30,7 +30,8 @@
                     <h2 class="text-grey-dark text-center text-2xl sm:text-3xl leading-tight font-thin mb-8">Latest articles</h2>
                     @include ('_partials.articles-list', [
                         'articles' => get_latest_articles(3),
-                        'articleClass' => 'w-full md:w-1/3 px-4 mb-8'
+                        'articleClass' => 'w-full lg:w-1/3 px-4 mb-8',
+                        'bigCards' => false
                     ])
                 </div>
             </div>
