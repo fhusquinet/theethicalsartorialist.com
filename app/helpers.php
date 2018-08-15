@@ -125,9 +125,14 @@ if ( ! function_exists('get_latest_articles') )
      |
      | Return the latest articles.
      */
-    function get_latest_articles($limit = 3)
+    function get_latest_articles()
     {
-        return \App\Models\Article::latest()->limit($limit)->get();
+        return Cache::rememberForever('latest-articles', function() {
+            return \App\Models\Article::latest()
+                                    ->with('categories', 'media')
+                                    ->limit(3)
+                                    ->get();
+        });
     }
 }
 
@@ -147,7 +152,16 @@ if ( ! function_exists('is_date') )
     }
 }
 
-if ( ! function_exists('navigation') ) {
+if ( ! function_exists('navigation') )
+{
+
+    /*
+     |--------------------------------------------------------------------------
+     | Navigation
+     |--------------------------------------------------------------------------
+     |
+     | Return the navigation links used on the blog.
+     */
     function navigation()
     {
         return [

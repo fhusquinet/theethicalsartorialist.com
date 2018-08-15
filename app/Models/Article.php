@@ -5,6 +5,8 @@ namespace App\Models;
 use App\Scopes\PublishedScope;
 use Spatie\Tags\HasTags;
 
+use Cache;
+
 class Article extends BaseModel
 {
     use HasTags;
@@ -31,9 +33,13 @@ class Article extends BaseModel
 
         self::creating(function ($model) {
             $model->reading_time = calculate_reading_time($model->text);
+            Cache::forget('latest-articles');
         });
         self::updating(function ($model) {
             $model->reading_time = calculate_reading_time($model->text);
+            if ( $model->isDirty('is_published') ) {
+                Cache::forget('latest-articles');
+            }
         });
     }
 
