@@ -1,5 +1,5 @@
 .button {
-    @apply .bg-primary .text-white .py-4 .px-6 .text-center;
+    @apply .bg-primary .text-white .py-3 .px-4 .text-center;
     text-decoration: none;
 
     &:hover {
@@ -49,7 +49,7 @@
             @apply .bg-transparent .border-white .text-white;
 
             &:hover {
-                @apply .bg-white .text-secondary;
+                @apply .bg-white .text-primary;
             }
         }
     }

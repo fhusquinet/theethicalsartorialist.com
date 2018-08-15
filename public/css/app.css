@@ -1026,10 +1026,10 @@ table {
 .button {
   background-color: #2fb9bc;
   color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: center;
   text-decoration: none;
 }
@@ -1103,7 +1103,7 @@ table {
 
 .button--ghost.button--white:hover {
   background-color: #fff;
-  color: #f0433a;
+  color: #2fb9bc;
 }
 
 .button--secondary {

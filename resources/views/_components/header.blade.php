@@ -5,7 +5,7 @@
                 <div class="text-center">
                     <h1 class="text-white @if (isset($button) || isset($subtitle)) mb-4 @endif font-thin">{{ $title }}</h1>
                     @isset ($subtitle)
-                        <h2 class="text-white text-base @isset ($button) mb-8 @endisset font-thin">{{ $subtitle }}</h2>
+                        <h2 class="text-white opacity-75 text-base @isset ($button) mb-8 @endisset font-thin">{{ $subtitle }}</h2>
                     @endisset
                     {{ $button ?? '' }}
                 </div>
