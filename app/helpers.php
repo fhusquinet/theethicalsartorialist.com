@@ -114,3 +114,19 @@ if ( ! function_exists('calculate_reading_time') ) {
         return floor($wordCount / 200);
     }
 }
+
+if ( ! function_exists('get_latest_articles') )
+{
+
+    /*
+     |--------------------------------------------------------------------------
+     | Get Latest Articles
+     |--------------------------------------------------------------------------
+     |
+     | Return the latest articles.
+     */
+    function get_latest_articles($limit = 3)
+    {
+        return \App\Models\Article::latest()->limit($limit)->get();
+    }
+}
