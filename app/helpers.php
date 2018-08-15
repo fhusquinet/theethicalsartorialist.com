@@ -28,9 +28,14 @@ if ( ! function_exists('get_image') ) {
      |
      | Return the image corresponding to the given id on the site model.
      */
-    function get_image($id)
+    function get_image($id = null)
     {
-        return Spatie\MediaLibrary\Models\Media::where('id', $id)->first();
+        if ( ! $id ) {
+            return;
+        }
+        return Cache::rememberForever('image-'.$id, function () use ($id) {
+            return Spatie\MediaLibrary\Models\Media::where('id', $id)->first();
+        });
     }
 }
 

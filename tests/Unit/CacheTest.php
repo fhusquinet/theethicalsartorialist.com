@@ -63,4 +63,18 @@ class CacheTest extends TestCase
 
         $this->assertFalse(Cache::has('latest-articles'));
     }
+
+    /**
+     * @test
+     */
+    public function getting_an_image_will_cache_it()
+    {
+        $article = factory(Article::class)->create(['is_published' => false]);
+        $article->addImage('https://wikipedia.org/static/images/project-logos/enwiki-2x.png');
+
+        $image = get_image( $article->getImageId() );
+
+        $this->assertNotNull($image->id);
+        $this->assertTrue(Cache::has('image-'.$image->id));
+    }
 }
