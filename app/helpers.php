@@ -146,3 +146,31 @@ if ( ! function_exists('is_date') )
         return $date instanceof Carbon\Carbon;
     }
 }
+
+if ( ! function_exists('navigation') ) {
+    function navigation()
+    {
+        return [
+            [
+                'url' => route('homepage'),
+                'text' => 'Home'
+            ],
+            [
+                'url' => route('articles.index'),
+                'text' => 'Latest articles'
+            ],
+            [
+                'url' => '#',
+                'text' => 'Ethical guide'
+            ],
+            [
+                'url' => '#',
+                'text' => 'About'
+            ],
+            [
+                'url' => '#',
+                'text' => 'Contact'
+            ]
+        ];
+    }
+}

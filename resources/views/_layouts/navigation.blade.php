@@ -17,12 +17,11 @@
                 </a>
             </div>
             <div class="items-center w-auto hidden lg:flex">
-                <a href="{{ url('/') }}" class="block align-middle py-6 lg:inline-block lg:mt-0 font-thin text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
-                    Home
-                </a>
-                <a href="{{ url('/content') }}" class="block align-middle py-6 lg:inline-block lg:mt-0 font-thin text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
-                    Contact
-                </a>
+                @foreach ( navigation() as $link )
+                    <a href="{{ $link['url'] }}" class="block align-middle py-6 lg:inline-block lg:mt-0 font-thin text-grey-dark hover:text-primary-darker transition--fast ml-4 no-underline">
+                        {{ $link['text'] }}
+                    </a>
+                @endforeach
                 <a href="#" class="py-4 ml-8 align-middle block lg:inline-block opacity-50 transition--fast hover:opacity-100 js-trigger" data-element="searching">
                     <img src="{{ asset('icons/search.svg') }}" class="h-5" alt="Menu" />
                 </a>

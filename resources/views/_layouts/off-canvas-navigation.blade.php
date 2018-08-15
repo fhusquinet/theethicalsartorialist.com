@@ -7,11 +7,9 @@
     <div class="absolute pin-center-y pin-l pin-r z-50">
         <div class="container px-12 max-w-md">
             <ul class="list-reset">
-                <li><a href="{{ route('homepage') }}" class="text-grey-lightest hover:text-primary relative transition--fast text-2xl md:text-4xl font-normal py-2 px-4 my-1 no-underline block md:inline-block">Home</a></li>
-                <li><a href="{{ route('articles.index') }}" class="text-grey-lightest hover:text-primary relative transition--fast text-2xl md:text-4xl font-normal py-2 px-4 my-1 no-underline block md:inline-block">Latest Articles</a></li>
-                <li><a href="" class="text-grey-lightest hover:text-primary relative transition--fast text-2xl md:text-4xl font-normal py-2 px-4 my-1 no-underline block md:inline-block">Why buying ethical?</a></li>
-                <li><a href="" class="text-grey-lightest hover:text-primary relative transition--fast text-2xl md:text-4xl font-normal py-2 px-4 my-1 no-underline block md:inline-block">About</a></li>
-                <li><a href="" class="text-grey-lightest hover:text-primary relative transition--fast text-2xl md:text-4xl font-normal py-2 px-4 my-1 no-underline block md:inline-block">Contact</a></li>
+                @foreach ( navigation() as $link )
+                    <li><a href="{{ $link['url'] }}" class="text-grey-lightest hover:text-primary relative transition--fast text-2xl md:text-4xl font-normal py-2 px-4 my-1 no-underline block md:inline-block">{{ $link['text'] }}</a></li>
+                @endforeach
             </ul>
         </div>
     </div>
