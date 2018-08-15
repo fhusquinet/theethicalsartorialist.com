@@ -1,4 +1,4 @@
-<nav class="main-navigation bg-white fixed pin-t pin-x @if ( ! isset($noNavigationShadow) ) shadow @endif z-40">
+<nav class="main-navigation bg-white fixed pin-t pin-x @if ( ! isset($noNavigationShadow) ) border-b border-grey-lighter @endif z-40">
     <div class="container px-4">
         <div class="flex items-center justify-between flex-wrap">
             <div class="flex items-center w-auto lg:hidden">
