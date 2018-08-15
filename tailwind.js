@@ -56,13 +56,13 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
-  'primary-darkest': '#024261',
-  'primary-darker': '#01577f',
-  'primary-dark': '#01577f',
-  'primary': '#0189c9',
-  'primary-light': '#2aa4de',
-  'primary-lighter': '#0189c9',
-  'primary-lightest': '#9bdaf8',
+  'primary-darkest': '#0F3C3C',
+  'primary-darker': '#1F7A7C',
+  'primary-dark': '#29A0A2',
+  'primary': '#2fb9bc',
+  'primary-light': '#32C6C9',
+  'primary-lighter': '#35D3D6',
+  'primary-lightest': '#3DF1F5',
 
   'secondary-darkest': '#800d07',
   'secondary-darker': '#a7170f',
@@ -209,6 +209,8 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '8xl': '8rem',      // 128px
+    '12xl': '12rem',    // 192px
   },
 
 
@@ -607,7 +609,8 @@ module.exports = {
     '16': '4rem',
     '20': '5rem',
     '24': '6rem',
-    '32': '8rem'
+    '32': '8rem',
+    'navigation': '70px'
   },
 
 
@@ -808,11 +811,11 @@ module.exports = {
   modules: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColors: ['responsive', 'hover'],
+    backgroundColors: ['responsive', 'hover', 'focus'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
-    borderColors: ['responsive', 'hover'],
+    borderColors: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],
@@ -832,6 +835,7 @@ module.exports = {
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
     opacity: ['responsive', 'hover', 'group-hover'],
+    outline: ['focus'],
     overflow: ['responsive'],
     padding: ['responsive', 'hover', 'group-hover'],
     pointerEvents: ['responsive'],

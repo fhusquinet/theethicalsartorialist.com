@@ -1,4 +1,4 @@
-<nav class="main-navigation bg-white fixed pin-t pin-x shadow z-40">
+<nav class="main-navigation bg-white fixed pin-t pin-x @if ( ! isset($noNavigationShadow) ) shadow @endif z-40">
     <div class="container px-4">
         <div class="flex items-center justify-between flex-wrap">
             <div class="flex items-center w-auto lg:hidden">
@@ -7,7 +7,7 @@
                 </a>
             </div>
             <div class="flex items-center flex-no-shrink">
-                <a href="{{ url('/') }}" class="py-4 inline-block">
+                <a href="{{ route('homepage') }}" class="py-4 inline-block">
                     <img src="{{ asset('logo.svg') }}" class="h-8" alt="The Ethical Sartorialist" />
                 </a>
             </div>

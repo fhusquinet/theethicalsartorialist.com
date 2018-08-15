@@ -1,6 +1,6 @@
 .main-content,
 .header-padding {
-    padding-top: 70px;
+    @apply .pt-navigation;
 }
 
 .text-container {
