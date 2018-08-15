@@ -22,7 +22,8 @@
             'icon' => asset('icons/admin/categories.svg')
         ])
         @include ('admin._layouts.sidebar.link', [
-            'url'  => route('admin.show'),
+            'url'   => route('admin.tags.index'),
+            'routes' => ['admin.tags.index', 'admin.tags.edit'],
             'text' => 'Tags',
             'icon' => asset('icons/admin/tags.svg')
         ])

@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 
 use App\Models\Article;
 use App\Models\Category;
+use Spatie\Tags\Tag;
 
 use PaginateRoute;
 

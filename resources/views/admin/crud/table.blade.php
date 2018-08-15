@@ -30,7 +30,7 @@
                     <a href="{{ route($routes['edit'], $model) }}" class="group inline-block">
                         <img class="h-4 w-4 opacity-50 group-hover:opacity-100" src="{{ asset('icons/admin/edit.svg') }}" />
                     </a>
-                    @if ( $model->trashed() )
+                    @if ( method_exists($model, 'trashed') && $model->trashed() )
                         <a href="{{ route($routes['restore'], $model) }}" class="group inline-block ml-2">
                             <img class="h-4 w-4 opacity-50 group-hover:opacity-100" src="{{ asset('icons/admin/restore.svg') }}" />
                         </a>
