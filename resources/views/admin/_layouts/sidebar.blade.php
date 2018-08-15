@@ -1,5 +1,7 @@
 <div class="admin__sidebar relative z-2 flex-no-shrink bg-white shadow-admin min-h-full">
-    <img class="w-24 block mx-auto my-8" src="{{ asset('logo.svg') }}" />
+    <a href="{{ route('homepage') }}">
+        <img class="w-24 block mx-auto my-8" src="{{ asset('logo.svg') }}" />
+    </a>
     <ul class="list-reset">
         @include ('admin._layouts.sidebar.link', [
             'url'    => route('admin.show'),
@@ -14,7 +16,8 @@
             'icon'  => asset('icons/admin/articles.svg')
         ])
         @include ('admin._layouts.sidebar.link', [
-            'url'  => route('admin.show'),
+            'url'   => route('admin.categories.index'),
+            'routes' => ['admin.categories.index', 'admin.categories.edit'],
             'text' => 'Categories',
             'icon' => asset('icons/admin/categories.svg')
         ])

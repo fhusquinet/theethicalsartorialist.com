@@ -702,7 +702,7 @@ module.exports = {
 
   shadows: {
     default: '0 2px 0 0 #e5e5e5',
-    'admin': '0px 0px 10px 0px rgba(0,0,0,0.25);',
+    'admin': '0 0 8px 0 rgba(0, 0, 0, .1)',
     'none': 'none',
   },
 

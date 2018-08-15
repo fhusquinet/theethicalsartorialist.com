@@ -5786,8 +5786,8 @@ table {
 }
 
 .shadow-admin {
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
 }
 
 .shadow-none {
@@ -5801,8 +5801,8 @@ table {
 }
 
 .hover\:shadow-admin:hover {
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
 }
 
 .hover\:shadow-none:hover {
@@ -11678,8 +11678,8 @@ table {
   }
 
   .sm\:shadow-admin {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .sm\:shadow-none {
@@ -11693,8 +11693,8 @@ table {
   }
 
   .sm\:hover\:shadow-admin:hover {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .sm\:hover\:shadow-none:hover {
@@ -17544,8 +17544,8 @@ table {
   }
 
   .md\:shadow-admin {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .md\:shadow-none {
@@ -17559,8 +17559,8 @@ table {
   }
 
   .md\:hover\:shadow-admin:hover {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .md\:hover\:shadow-none:hover {
@@ -23410,8 +23410,8 @@ table {
   }
 
   .lg\:shadow-admin {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .lg\:shadow-none {
@@ -23425,8 +23425,8 @@ table {
   }
 
   .lg\:hover\:shadow-admin:hover {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .lg\:hover\:shadow-none:hover {
@@ -29276,8 +29276,8 @@ table {
   }
 
   .xl\:shadow-admin {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .xl\:shadow-none {
@@ -29291,8 +29291,8 @@ table {
   }
 
   .xl\:hover\:shadow-admin:hover {
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
   }
 
   .xl\:hover\:shadow-none:hover {

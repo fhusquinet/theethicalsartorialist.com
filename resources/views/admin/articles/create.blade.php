@@ -1,6 +1,6 @@
 @extends ('admin.app')
 
-@section ('title', 'Edit article')
+@section ('title', 'Create a new article')
 
 @section ('content')
     <div class="bg-white shadow">

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 use App\Models\Article;
+use App\Models\Category;
 
 use PaginateRoute;
 
@@ -32,6 +33,12 @@ class RouteServiceProvider extends ServiceProvider
         Route::bind('admin_article', function ($value) {
             return Article::withoutGlobalScopes()
                         ->where('slug', $value)
+                        ->withTrashed()
+                        ->first() ?? abort(404);
+        });
+
+        Route::bind('admin_category', function ($value) {
+            return Category::where('slug', $value)
                         ->withTrashed()
                         ->first() ?? abort(404);
         });
