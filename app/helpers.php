@@ -30,7 +30,7 @@ if ( ! function_exists('get_image') ) {
      */
     function get_image($id)
     {
-        return site()->getImages()->where('id', $id)->first();
+        return Spatie\MediaLibrary\Models\Media::where('id', $id)->first();
     }
 }
 

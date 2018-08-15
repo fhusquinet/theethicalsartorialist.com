@@ -31,6 +31,11 @@
             'option_column' => 'name',
             'option_value'  => 'name'
         ],
+        'image' => [
+            'label' => 'Image',
+            'type'  => 'image',
+            'current' => $article->getImageUrl()
+        ],
         'is_published' => [
             'label' => 'Mark as published',
             'type'  => 'checkbox'
