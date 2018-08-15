@@ -18,7 +18,7 @@ class TagController extends Controller
     public function show($slug)
     {
         $tag = Tag::where('slug->en', $slug)->firstOrFail();
-        $articles = Article::withAnyTags([$tag->slug])
+        $articles = Article::withAnyTags([$tag->name])
                             ->latest()
                             ->paginate(12);
         
