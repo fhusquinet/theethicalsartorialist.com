@@ -4,29 +4,35 @@
 	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F6F8FD;}
-	.st1{fill:#1897A0;}
-	.st2{fill:none;stroke:#8C8C8C;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
-	.st3{fill:#2FB9BC;}
-	.st4{fill:none;stroke:#129393;stroke-miterlimit:10;}
-	.st5{fill:#606060;}
+	.st1{fill:none;stroke:#DDDDDD;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#DDDDDD;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#CCCCCC;stroke-width:10;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#A5A5A5;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#2FB9BC;}
+	.st6{fill:none;stroke:#129393;stroke-miterlimit:10;}
+	.st7{fill:#DDDDDD;}
 </style>
 <g>
-	<ellipse class="st0" cx="400.5" cy="400" rx="398.7" ry="331"/>
+	
+		<ellipse transform="matrix(0.2769 -0.9609 0.9609 0.2769 -94.7522 674.0903)" class="st0" cx="400.5" cy="400" rx="334" ry="398.7"/>
 </g>
-<circle class="st1" cx="185.4" cy="330.7" r="11"/>
-<line class="st2" x1="350.5" y1="185.4" x2="395.9" y2="230.8"/>
-<line class="st2" x1="395.9" y1="185.4" x2="350.5" y2="230.8"/>
-<line class="st2" x1="509.4" y1="185.4" x2="554.8" y2="230.8"/>
-<line class="st2" x1="554.8" y1="185.4" x2="509.4" y2="230.8"/>
-<ellipse class="st3" cx="527.6" cy="346.9" rx="18.2" ry="12.8"/>
-<rect x="509.4" y="306" class="st3" width="36.5" height="40.1"/>
-<line class="st2" x1="350.5" y1="306" x2="554.8" y2="306"/>
-<line class="st4" x1="527.6" y1="313.2" x2="527.6" y2="346.2"/>
-<path class="st5" d="M680.7,83.5H224.5c-27.7,0-50.2,22.5-50.2,50.2v128.1v23.5v0.9h0c0.4,5.7,5.2,10.2,11,10.2s10.5-4.5,11-10.2h0
-	v-0.9v-23.5V133.7c0-15.5,12.6-28.1,28.1-28.1h456.2c15.5,0,28.1,12.6,28.1,28.1v265.8H196.4v-22.8V376c0-6.1-4.9-11-11-11
-	s-11,4.9-11,11v0.7v22.8v39.2c0,27.7,22.5,50.2,50.2,50.2h161l-17,47h-34.9c-26.4,0-36.8,32-38.9,51c-0.3,3.1,0.7,6.2,2.8,8.5
-	c2.1,2.3,5.1,3.7,8.2,3.7h146.9h146.9c3.1,0,6.1-1.3,8.2-3.7c2.1-2.3,3.1-5.4,2.8-8.5c-2-18.9-12.5-51-38.9-51h-34.9l-17-47h161
-	c27.7,0,50.2-22.5,50.2-50.2v-305C730.9,106,708.4,83.5,680.7,83.5z M586,577H452.6H319.3c2.8-9.4,7.6-19.1,14.4-19.1h119h119
-	C578.4,557.9,583.2,567.6,586,577z M513.3,535.8h-60.7H392l17-47h87.3L513.3,535.8z M708.9,438.7c0,15.5-12.6,28.1-28.1,28.1H224.5
-	c-15.5,0-28.1-12.6-28.1-28.1v-17.1h512.5V438.7z"/>
+<g>
+	<line class="st1" x1="411.5" y1="547.9" x2="383.8" y2="624.4"/>
+	<path class="st2" d="M468.5,670H305.7c0,0,4.9-45.6,30.9-45.6h131.9"/>
+	<line class="st1" x1="525.4" y1="547.9" x2="553.1" y2="624.4"/>
+	<path class="st2" d="M468.5,670h162.8c0,0-4.9-45.6-30.9-45.6H468.5"/>
+	<path class="st3" d="M741.8,547.9H202.5c-14.7,0-26.7-12-26.7-26.7V149.7c0-14.7,12-26.7,26.7-26.7h539.3c14.7,0,26.7,12,26.7,26.7
+		v371.6C768.4,535.9,756.4,547.9,741.8,547.9z"/>
+	<g>
+		<line class="st4" x1="358.9" y1="238.8" x2="409.2" y2="289.1"/>
+		<line class="st4" x1="409.2" y1="238.8" x2="358.9" y2="289.1"/>
+		<line class="st4" x1="535" y1="238.8" x2="585.4" y2="289.1"/>
+		<line class="st4" x1="585.4" y1="238.8" x2="535" y2="289.1"/>
+		<ellipse class="st5" cx="555.3" cy="417.9" rx="20.2" ry="14.2"/>
+		<rect x="535" y="372.6" class="st5" width="40.5" height="44.5"/>
+		<line class="st4" x1="358.9" y1="372.6" x2="585.4" y2="372.6"/>
+		<line class="st6" x1="555.3" y1="380.5" x2="555.3" y2="417.1"/>
+	</g>
+	<rect x="181" y="489.6" class="st7" width="582" height="6"/>
+</g>
 </svg>
