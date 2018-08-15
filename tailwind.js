@@ -76,6 +76,8 @@ let colors = {
   'secondary-accent': '#540032',
   'secondary-accent-light': '#820333',
 
+  'alert': '#e74c3c',
+
   'body': '#f7f7f7', // Used for the body background
 }
 
@@ -607,6 +609,7 @@ module.exports = {
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
+    '14': '3.5rem',
     '16': '4rem',
     '20': '5rem',
     '24': '6rem',
@@ -693,6 +696,7 @@ module.exports = {
 
   shadows: {
     default: '0 2px 0 0 #e5e5e5',
+    'admin': '0px 0px 10px 0px rgba(0,0,0,0.25);',
     'none': 'none',
   },
 

@@ -14,13 +14,12 @@ class ArticleController extends Controller
      * @param  \App\Models\Article
      * @return \Illuminate\Http\Response
      */
-    public function show(Article $article)
+    public function index()
     {
-        $otherArticles = Article::where('id', '!=', $article->id)->limit(3)->get();
+        $articles = Article::latest()->paginate(12);
 
-        return view('articles.show', [
-            'article'       => $article,
-            'otherArticles' => $otherArticles
+        return view('articles.index', [
+            'articles' => $articles
         ]);
     }
 
@@ -30,12 +29,13 @@ class ArticleController extends Controller
      * @param  \App\Models\Article
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function show(Article $article)
     {
-        $articles = Article::latest()->paginate(12);
+        $otherArticles = Article::where('id', '!=', $article->id)->limit(3)->get();
 
-        return view('articles.index', [
-            'articles' => $articles
+        return view('articles.show', [
+            'article'       => $article,
+            'otherArticles' => $otherArticles
         ]);
     }
 }

@@ -1330,6 +1330,10 @@ table {
   background-color: #820333;
 }
 
+.bg-alert {
+  background-color: #e74c3c;
+}
+
 .bg-body {
   background-color: #f7f7f7;
 }
@@ -1442,6 +1446,10 @@ table {
   background-color: #820333;
 }
 
+.hover\:bg-alert:hover {
+  background-color: #e74c3c;
+}
+
 .hover\:bg-body:hover {
   background-color: #f7f7f7;
 }
@@ -1552,6 +1560,10 @@ table {
 
 .focus\:bg-secondary-accent-light:focus {
   background-color: #820333;
+}
+
+.focus\:bg-alert:focus {
+  background-color: #e74c3c;
 }
 
 .focus\:bg-body:focus {
@@ -1738,6 +1750,10 @@ table {
   border-color: #820333;
 }
 
+.border-alert {
+  border-color: #e74c3c;
+}
+
 .border-body {
   border-color: #f7f7f7;
 }
@@ -1850,6 +1866,10 @@ table {
   border-color: #820333;
 }
 
+.hover\:border-alert:hover {
+  border-color: #e74c3c;
+}
+
 .hover\:border-body:hover {
   border-color: #f7f7f7;
 }
@@ -1960,6 +1980,10 @@ table {
 
 .focus\:border-secondary-accent-light:focus {
   border-color: #820333;
+}
+
+.focus\:border-alert:focus {
+  border-color: #e74c3c;
 }
 
 .focus\:border-body:focus {
@@ -4518,6 +4542,10 @@ table {
   padding: 3rem;
 }
 
+.p-14 {
+  padding: 3.5rem;
+}
+
 .p-16 {
   padding: 4rem;
 }
@@ -4634,6 +4662,16 @@ table {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .py-16 {
@@ -4850,6 +4888,22 @@ table {
   padding-left: 3rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -4998,6 +5052,10 @@ table {
   padding: 3rem;
 }
 
+.group:hover .group-hover\:p-14 {
+  padding: 3.5rem;
+}
+
 .group:hover .group-hover\:p-16 {
   padding: 4rem;
 }
@@ -5114,6 +5172,16 @@ table {
 .group:hover .group-hover\:px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.group:hover .group-hover\:py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.group:hover .group-hover\:px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .group:hover .group-hover\:py-16 {
@@ -5330,6 +5398,22 @@ table {
   padding-left: 3rem;
 }
 
+.group:hover .group-hover\:pt-14 {
+  padding-top: 3.5rem;
+}
+
+.group:hover .group-hover\:pr-14 {
+  padding-right: 3.5rem;
+}
+
+.group:hover .group-hover\:pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.group:hover .group-hover\:pl-14 {
+  padding-left: 3.5rem;
+}
+
 .group:hover .group-hover\:pt-16 {
   padding-top: 4rem;
 }
@@ -5478,6 +5562,10 @@ table {
   padding: 3rem;
 }
 
+.hover\:p-14:hover {
+  padding: 3.5rem;
+}
+
 .hover\:p-16:hover {
   padding: 4rem;
 }
@@ -5594,6 +5682,16 @@ table {
 .hover\:px-12:hover {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.hover\:py-14:hover {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.hover\:px-14:hover {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .hover\:py-16:hover {
@@ -5810,6 +5908,22 @@ table {
   padding-left: 3rem;
 }
 
+.hover\:pt-14:hover {
+  padding-top: 3.5rem;
+}
+
+.hover\:pr-14:hover {
+  padding-right: 3.5rem;
+}
+
+.hover\:pb-14:hover {
+  padding-bottom: 3.5rem;
+}
+
+.hover\:pl-14:hover {
+  padding-left: 3.5rem;
+}
+
 .hover\:pt-16:hover {
   padding-top: 4rem;
 }
@@ -6012,6 +6126,11 @@ table {
           box-shadow: 0 2px 0 0 #e5e5e5;
 }
 
+.shadow-admin {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+}
+
 .shadow-none {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -6020,6 +6139,11 @@ table {
 .hover\:shadow:hover {
   -webkit-box-shadow: 0 2px 0 0 #e5e5e5;
           box-shadow: 0 2px 0 0 #e5e5e5;
+}
+
+.hover\:shadow-admin:hover {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
 }
 
 .hover\:shadow-none:hover {
@@ -6167,6 +6291,10 @@ table {
   color: #820333;
 }
 
+.text-alert {
+  color: #e74c3c;
+}
+
 .text-body {
   color: #f7f7f7;
 }
@@ -6279,6 +6407,10 @@ table {
   color: #820333;
 }
 
+.group:hover .group-hover\:text-alert {
+  color: #e74c3c;
+}
+
 .group:hover .group-hover\:text-body {
   color: #f7f7f7;
 }
@@ -6389,6 +6521,10 @@ table {
 
 .hover\:text-secondary-accent-light:hover {
   color: #820333;
+}
+
+.hover\:text-alert:hover {
+  color: #e74c3c;
 }
 
 .hover\:text-body:hover {
@@ -6949,6 +7085,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .sm\:bg-alert {
+    background-color: #e74c3c;
+  }
+
   .sm\:bg-body {
     background-color: #f7f7f7;
   }
@@ -7061,6 +7201,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .sm\:hover\:bg-alert:hover {
+    background-color: #e74c3c;
+  }
+
   .sm\:hover\:bg-body:hover {
     background-color: #f7f7f7;
   }
@@ -7171,6 +7315,10 @@ body.baguetteBox-open {
 
   .sm\:focus\:bg-secondary-accent-light:focus {
     background-color: #820333;
+  }
+
+  .sm\:focus\:bg-alert:focus {
+    background-color: #e74c3c;
   }
 
   .sm\:focus\:bg-body:focus {
@@ -7349,6 +7497,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .sm\:border-alert {
+    border-color: #e74c3c;
+  }
+
   .sm\:border-body {
     border-color: #f7f7f7;
   }
@@ -7461,6 +7613,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .sm\:hover\:border-alert:hover {
+    border-color: #e74c3c;
+  }
+
   .sm\:hover\:border-body:hover {
     border-color: #f7f7f7;
   }
@@ -7571,6 +7727,10 @@ body.baguetteBox-open {
 
   .sm\:focus\:border-secondary-accent-light:focus {
     border-color: #820333;
+  }
+
+  .sm\:focus\:border-alert:focus {
+    border-color: #e74c3c;
   }
 
   .sm\:focus\:border-body:focus {
@@ -10121,6 +10281,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .sm\:p-14 {
+    padding: 3.5rem;
+  }
+
   .sm\:p-16 {
     padding: 4rem;
   }
@@ -10237,6 +10401,16 @@ body.baguetteBox-open {
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .sm\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .sm\:py-16 {
@@ -10453,6 +10627,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .sm\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .sm\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .sm\:pt-16 {
     padding-top: 4rem;
   }
@@ -10601,6 +10791,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .group:hover .sm\:group-hover\:p-14 {
+    padding: 3.5rem;
+  }
+
   .group:hover .sm\:group-hover\:p-16 {
     padding: 4rem;
   }
@@ -10717,6 +10911,16 @@ body.baguetteBox-open {
   .group:hover .sm\:group-hover\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .group:hover .sm\:group-hover\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .sm\:group-hover\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .group:hover .sm\:group-hover\:py-16 {
@@ -10933,6 +11137,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .group:hover .sm\:group-hover\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .group:hover .sm\:group-hover\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .group:hover .sm\:group-hover\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .sm\:group-hover\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .group:hover .sm\:group-hover\:pt-16 {
     padding-top: 4rem;
   }
@@ -11081,6 +11301,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .sm\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
   .sm\:hover\:p-16:hover {
     padding: 4rem;
   }
@@ -11197,6 +11421,16 @@ body.baguetteBox-open {
   .sm\:hover\:px-12:hover {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .sm\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .sm\:hover\:py-16:hover {
@@ -11413,6 +11647,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .sm\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .sm\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .sm\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
   .sm\:hover\:pt-16:hover {
     padding-top: 4rem;
   }
@@ -11615,6 +11865,11 @@ body.baguetteBox-open {
             box-shadow: 0 2px 0 0 #e5e5e5;
   }
 
+  .sm\:shadow-admin {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+  }
+
   .sm\:shadow-none {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -11623,6 +11878,11 @@ body.baguetteBox-open {
   .sm\:hover\:shadow:hover {
     -webkit-box-shadow: 0 2px 0 0 #e5e5e5;
             box-shadow: 0 2px 0 0 #e5e5e5;
+  }
+
+  .sm\:hover\:shadow-admin:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
   }
 
   .sm\:hover\:shadow-none:hover {
@@ -11762,6 +12022,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .sm\:text-alert {
+    color: #e74c3c;
+  }
+
   .sm\:text-body {
     color: #f7f7f7;
   }
@@ -11874,6 +12138,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .group:hover .sm\:group-hover\:text-alert {
+    color: #e74c3c;
+  }
+
   .group:hover .sm\:group-hover\:text-body {
     color: #f7f7f7;
   }
@@ -11984,6 +12252,10 @@ body.baguetteBox-open {
 
   .sm\:hover\:text-secondary-accent-light:hover {
     color: #820333;
+  }
+
+  .sm\:hover\:text-alert:hover {
+    color: #e74c3c;
   }
 
   .sm\:hover\:text-body:hover {
@@ -12511,6 +12783,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .md\:bg-alert {
+    background-color: #e74c3c;
+  }
+
   .md\:bg-body {
     background-color: #f7f7f7;
   }
@@ -12623,6 +12899,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .md\:hover\:bg-alert:hover {
+    background-color: #e74c3c;
+  }
+
   .md\:hover\:bg-body:hover {
     background-color: #f7f7f7;
   }
@@ -12733,6 +13013,10 @@ body.baguetteBox-open {
 
   .md\:focus\:bg-secondary-accent-light:focus {
     background-color: #820333;
+  }
+
+  .md\:focus\:bg-alert:focus {
+    background-color: #e74c3c;
   }
 
   .md\:focus\:bg-body:focus {
@@ -12911,6 +13195,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .md\:border-alert {
+    border-color: #e74c3c;
+  }
+
   .md\:border-body {
     border-color: #f7f7f7;
   }
@@ -13023,6 +13311,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .md\:hover\:border-alert:hover {
+    border-color: #e74c3c;
+  }
+
   .md\:hover\:border-body:hover {
     border-color: #f7f7f7;
   }
@@ -13133,6 +13425,10 @@ body.baguetteBox-open {
 
   .md\:focus\:border-secondary-accent-light:focus {
     border-color: #820333;
+  }
+
+  .md\:focus\:border-alert:focus {
+    border-color: #e74c3c;
   }
 
   .md\:focus\:border-body:focus {
@@ -15683,6 +15979,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .md\:p-14 {
+    padding: 3.5rem;
+  }
+
   .md\:p-16 {
     padding: 4rem;
   }
@@ -15799,6 +16099,16 @@ body.baguetteBox-open {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .md\:py-16 {
@@ -16015,6 +16325,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .md\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .md\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .md\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .md\:pt-16 {
     padding-top: 4rem;
   }
@@ -16163,6 +16489,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .group:hover .md\:group-hover\:p-14 {
+    padding: 3.5rem;
+  }
+
   .group:hover .md\:group-hover\:p-16 {
     padding: 4rem;
   }
@@ -16279,6 +16609,16 @@ body.baguetteBox-open {
   .group:hover .md\:group-hover\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .group:hover .md\:group-hover\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .md\:group-hover\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .group:hover .md\:group-hover\:py-16 {
@@ -16495,6 +16835,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .group:hover .md\:group-hover\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .group:hover .md\:group-hover\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .group:hover .md\:group-hover\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .md\:group-hover\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .group:hover .md\:group-hover\:pt-16 {
     padding-top: 4rem;
   }
@@ -16643,6 +16999,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .md\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
   .md\:hover\:p-16:hover {
     padding: 4rem;
   }
@@ -16759,6 +17119,16 @@ body.baguetteBox-open {
   .md\:hover\:px-12:hover {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .md\:hover\:py-16:hover {
@@ -16975,6 +17345,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .md\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .md\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .md\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
   .md\:hover\:pt-16:hover {
     padding-top: 4rem;
   }
@@ -17177,6 +17563,11 @@ body.baguetteBox-open {
             box-shadow: 0 2px 0 0 #e5e5e5;
   }
 
+  .md\:shadow-admin {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+  }
+
   .md\:shadow-none {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -17185,6 +17576,11 @@ body.baguetteBox-open {
   .md\:hover\:shadow:hover {
     -webkit-box-shadow: 0 2px 0 0 #e5e5e5;
             box-shadow: 0 2px 0 0 #e5e5e5;
+  }
+
+  .md\:hover\:shadow-admin:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
   }
 
   .md\:hover\:shadow-none:hover {
@@ -17324,6 +17720,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .md\:text-alert {
+    color: #e74c3c;
+  }
+
   .md\:text-body {
     color: #f7f7f7;
   }
@@ -17436,6 +17836,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .group:hover .md\:group-hover\:text-alert {
+    color: #e74c3c;
+  }
+
   .group:hover .md\:group-hover\:text-body {
     color: #f7f7f7;
   }
@@ -17546,6 +17950,10 @@ body.baguetteBox-open {
 
   .md\:hover\:text-secondary-accent-light:hover {
     color: #820333;
+  }
+
+  .md\:hover\:text-alert:hover {
+    color: #e74c3c;
   }
 
   .md\:hover\:text-body:hover {
@@ -18073,6 +18481,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .lg\:bg-alert {
+    background-color: #e74c3c;
+  }
+
   .lg\:bg-body {
     background-color: #f7f7f7;
   }
@@ -18185,6 +18597,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .lg\:hover\:bg-alert:hover {
+    background-color: #e74c3c;
+  }
+
   .lg\:hover\:bg-body:hover {
     background-color: #f7f7f7;
   }
@@ -18295,6 +18711,10 @@ body.baguetteBox-open {
 
   .lg\:focus\:bg-secondary-accent-light:focus {
     background-color: #820333;
+  }
+
+  .lg\:focus\:bg-alert:focus {
+    background-color: #e74c3c;
   }
 
   .lg\:focus\:bg-body:focus {
@@ -18473,6 +18893,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .lg\:border-alert {
+    border-color: #e74c3c;
+  }
+
   .lg\:border-body {
     border-color: #f7f7f7;
   }
@@ -18585,6 +19009,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .lg\:hover\:border-alert:hover {
+    border-color: #e74c3c;
+  }
+
   .lg\:hover\:border-body:hover {
     border-color: #f7f7f7;
   }
@@ -18695,6 +19123,10 @@ body.baguetteBox-open {
 
   .lg\:focus\:border-secondary-accent-light:focus {
     border-color: #820333;
+  }
+
+  .lg\:focus\:border-alert:focus {
+    border-color: #e74c3c;
   }
 
   .lg\:focus\:border-body:focus {
@@ -21245,6 +21677,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .lg\:p-14 {
+    padding: 3.5rem;
+  }
+
   .lg\:p-16 {
     padding: 4rem;
   }
@@ -21361,6 +21797,16 @@ body.baguetteBox-open {
   .lg\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg\:py-16 {
@@ -21577,6 +22023,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .lg\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .lg\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .lg\:pt-16 {
     padding-top: 4rem;
   }
@@ -21725,6 +22187,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .group:hover .lg\:group-hover\:p-14 {
+    padding: 3.5rem;
+  }
+
   .group:hover .lg\:group-hover\:p-16 {
     padding: 4rem;
   }
@@ -21841,6 +22307,16 @@ body.baguetteBox-open {
   .group:hover .lg\:group-hover\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .group:hover .lg\:group-hover\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .group:hover .lg\:group-hover\:py-16 {
@@ -22057,6 +22533,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .group:hover .lg\:group-hover\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .lg\:group-hover\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .group:hover .lg\:group-hover\:pt-16 {
     padding-top: 4rem;
   }
@@ -22205,6 +22697,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .lg\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
   .lg\:hover\:p-16:hover {
     padding: 4rem;
   }
@@ -22321,6 +22817,16 @@ body.baguetteBox-open {
   .lg\:hover\:px-12:hover {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .lg\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg\:hover\:py-16:hover {
@@ -22537,6 +23043,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .lg\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .lg\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .lg\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
   .lg\:hover\:pt-16:hover {
     padding-top: 4rem;
   }
@@ -22739,6 +23261,11 @@ body.baguetteBox-open {
             box-shadow: 0 2px 0 0 #e5e5e5;
   }
 
+  .lg\:shadow-admin {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+  }
+
   .lg\:shadow-none {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -22747,6 +23274,11 @@ body.baguetteBox-open {
   .lg\:hover\:shadow:hover {
     -webkit-box-shadow: 0 2px 0 0 #e5e5e5;
             box-shadow: 0 2px 0 0 #e5e5e5;
+  }
+
+  .lg\:hover\:shadow-admin:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
   }
 
   .lg\:hover\:shadow-none:hover {
@@ -22886,6 +23418,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .lg\:text-alert {
+    color: #e74c3c;
+  }
+
   .lg\:text-body {
     color: #f7f7f7;
   }
@@ -22998,6 +23534,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .group:hover .lg\:group-hover\:text-alert {
+    color: #e74c3c;
+  }
+
   .group:hover .lg\:group-hover\:text-body {
     color: #f7f7f7;
   }
@@ -23108,6 +23648,10 @@ body.baguetteBox-open {
 
   .lg\:hover\:text-secondary-accent-light:hover {
     color: #820333;
+  }
+
+  .lg\:hover\:text-alert:hover {
+    color: #e74c3c;
   }
 
   .lg\:hover\:text-body:hover {
@@ -23635,6 +24179,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .xl\:bg-alert {
+    background-color: #e74c3c;
+  }
+
   .xl\:bg-body {
     background-color: #f7f7f7;
   }
@@ -23747,6 +24295,10 @@ body.baguetteBox-open {
     background-color: #820333;
   }
 
+  .xl\:hover\:bg-alert:hover {
+    background-color: #e74c3c;
+  }
+
   .xl\:hover\:bg-body:hover {
     background-color: #f7f7f7;
   }
@@ -23857,6 +24409,10 @@ body.baguetteBox-open {
 
   .xl\:focus\:bg-secondary-accent-light:focus {
     background-color: #820333;
+  }
+
+  .xl\:focus\:bg-alert:focus {
+    background-color: #e74c3c;
   }
 
   .xl\:focus\:bg-body:focus {
@@ -24035,6 +24591,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .xl\:border-alert {
+    border-color: #e74c3c;
+  }
+
   .xl\:border-body {
     border-color: #f7f7f7;
   }
@@ -24147,6 +24707,10 @@ body.baguetteBox-open {
     border-color: #820333;
   }
 
+  .xl\:hover\:border-alert:hover {
+    border-color: #e74c3c;
+  }
+
   .xl\:hover\:border-body:hover {
     border-color: #f7f7f7;
   }
@@ -24257,6 +24821,10 @@ body.baguetteBox-open {
 
   .xl\:focus\:border-secondary-accent-light:focus {
     border-color: #820333;
+  }
+
+  .xl\:focus\:border-alert:focus {
+    border-color: #e74c3c;
   }
 
   .xl\:focus\:border-body:focus {
@@ -26807,6 +27375,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .xl\:p-14 {
+    padding: 3.5rem;
+  }
+
   .xl\:p-16 {
     padding: 4rem;
   }
@@ -26923,6 +27495,16 @@ body.baguetteBox-open {
   .xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .xl\:py-16 {
@@ -27139,6 +27721,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .xl\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .xl\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .xl\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .xl\:pt-16 {
     padding-top: 4rem;
   }
@@ -27287,6 +27885,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .group:hover .xl\:group-hover\:p-14 {
+    padding: 3.5rem;
+  }
+
   .group:hover .xl\:group-hover\:p-16 {
     padding: 4rem;
   }
@@ -27403,6 +28005,16 @@ body.baguetteBox-open {
   .group:hover .xl\:group-hover\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .group:hover .xl\:group-hover\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .xl\:group-hover\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .group:hover .xl\:group-hover\:py-16 {
@@ -27619,6 +28231,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .group:hover .xl\:group-hover\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .group:hover .xl\:group-hover\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
+  .group:hover .xl\:group-hover\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .group:hover .xl\:group-hover\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
   .group:hover .xl\:group-hover\:pt-16 {
     padding-top: 4rem;
   }
@@ -27767,6 +28395,10 @@ body.baguetteBox-open {
     padding: 3rem;
   }
 
+  .xl\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
   .xl\:hover\:p-16:hover {
     padding: 4rem;
   }
@@ -27883,6 +28515,16 @@ body.baguetteBox-open {
   .xl\:hover\:px-12:hover {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .xl\:hover\:py-16:hover {
@@ -28099,6 +28741,22 @@ body.baguetteBox-open {
     padding-left: 3rem;
   }
 
+  .xl\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .xl\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .xl\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
   .xl\:hover\:pt-16:hover {
     padding-top: 4rem;
   }
@@ -28301,6 +28959,11 @@ body.baguetteBox-open {
             box-shadow: 0 2px 0 0 #e5e5e5;
   }
 
+  .xl\:shadow-admin {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+  }
+
   .xl\:shadow-none {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -28309,6 +28972,11 @@ body.baguetteBox-open {
   .xl\:hover\:shadow:hover {
     -webkit-box-shadow: 0 2px 0 0 #e5e5e5;
             box-shadow: 0 2px 0 0 #e5e5e5;
+  }
+
+  .xl\:hover\:shadow-admin:hover {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);;
   }
 
   .xl\:hover\:shadow-none:hover {
@@ -28448,6 +29116,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .xl\:text-alert {
+    color: #e74c3c;
+  }
+
   .xl\:text-body {
     color: #f7f7f7;
   }
@@ -28560,6 +29232,10 @@ body.baguetteBox-open {
     color: #820333;
   }
 
+  .group:hover .xl\:group-hover\:text-alert {
+    color: #e74c3c;
+  }
+
   .group:hover .xl\:group-hover\:text-body {
     color: #f7f7f7;
   }
@@ -28670,6 +29346,10 @@ body.baguetteBox-open {
 
   .xl\:hover\:text-secondary-accent-light:hover {
     color: #820333;
+  }
+
+  .xl\:hover\:text-alert:hover {
+    color: #e74c3c;
   }
 
   .xl\:hover\:text-body:hover {

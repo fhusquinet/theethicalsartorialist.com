@@ -22,3 +22,13 @@ Route::paginate('categories/{category}', 'CategoryController@show')->name('categ
 Route::paginate('tags/{slug}', 'TagController@show')->name('tags.show');
 
 Route::paginate('/search', 'SearchController@show')->name('search');
+
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login.show');
+    Route::post('login', 'Auth\LoginController@login')->name('login');
+    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+    Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function () {
+        Route::get('/', 'DashboardController@show')->name('show');
+    });
+});
