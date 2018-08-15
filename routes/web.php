@@ -42,5 +42,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::get('categories/{admin_category}/restore', 'CategoryController@restore')->name('categories.restore');
 
         Route::resource('tags', 'TagController');
+
+        Route::resource('medias', 'MediaController');
     });
 });
