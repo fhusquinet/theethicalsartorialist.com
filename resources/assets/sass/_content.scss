@@ -3,8 +3,16 @@
     @apply .pt-navigation;
 }
 
+.main-container {
+    max-width: 860px;
+}
+
 .text-container {
     margin: 0 auto;
     max-width: 650px;
     width: 100%;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
 }

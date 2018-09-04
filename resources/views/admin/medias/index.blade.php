@@ -10,8 +10,8 @@
         <div class="flex flex-wrap -mx-4">
             @foreach ( $medias as $media )
                 <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 px-4">
-                    <a href="{{ route('admin.medias.show', $media) }}">
-                        <img src="{{ $media->getUrl() }}" />
+                    <a href="{{ route('admin.medias.edit', $media) }}">
+                        <img src="{{ $media->getUrl('thumbnail') }}" />
                     </a>
                 </div>
             @endforeach

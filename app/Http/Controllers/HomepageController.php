@@ -15,15 +15,12 @@ class HomepageController extends Controller
      */
     public function show()
     {
-        $featuredArticle = Article::where('is_featured', true)->latest()->first();
-        $articles = Article::where('id', '!=', $featuredArticle->id)
-                            ->latest()
+        $articles = Article::latest()
                             ->limit(10)
                             ->get();
         
         return view('homepage', [
-            'articles'        => $articles,
-            'featuredArticle' => $featuredArticle
+            'articles'        => $articles
         ]);
     }
 }

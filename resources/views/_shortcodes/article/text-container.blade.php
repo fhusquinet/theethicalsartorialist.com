@@ -1,3 +1,3 @@
-<div class="text-container mb-10">
+<div class="text-container {{ $class ?? '' }}">
     {!! $content !!}
 </div>

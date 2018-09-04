@@ -126,8 +126,10 @@ class ArticleController extends Controller
     {
         $data['is_published'] = isset($data['is_published']) ? true : false;
 
-        $image = $data['image'] ?? null;
-        unset($data['image']);
+        $header = $data['header_image'] ?? null;
+        unset($data['header_image']);
+        $preview = $data['preview_image'] ?? null;
+        unset($data['preview_image']);
 
         $categories = $data['categories'] ?? [];
         unset($data['categories']);
@@ -138,8 +140,11 @@ class ArticleController extends Controller
         $article->fill($data);
         $article->save();
 
-        if ( $image ) {
-            $article->replaceImage($image);
+        if ( $header ) {
+            $article->replaceHeaderImage($header);
+        }
+        if ( $preview ) {
+            $article->replacePreviewImage($preview);
         }
 
         $article->categories()->sync($categories);

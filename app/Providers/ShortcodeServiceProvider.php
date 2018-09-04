@@ -24,6 +24,18 @@ class ShortcodeServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        app('shortcode')->register('b', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.bold', [
+                'content' => $content
+            ])->render();
+        });
+
+        app('shortcode')->register('xb', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.extra-bold', [
+                'content' => $content
+            ])->render();
+        });
+
         app('shortcode')->register('gallery', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.gallery', [
                 'class'   => $shortcode->class,
@@ -36,8 +48,8 @@ class ShortcodeServiceProvider extends ServiceProvider
             return view('_shortcodes.gallery-image', [
                 'image'      => $image,
                 'caption'    => $shortcode->caption,
-                'imageClass' => $shortcode->imageClass ?? 'b-lazy',
-                'class'      => $shortcode->class
+                'class'      => $shortcode->class,
+                'imageClass' => $shortcode->imgclass ?? 'b-lazy',
             ])->render();
         });
 
@@ -51,13 +63,15 @@ class ShortcodeServiceProvider extends ServiceProvider
 
         app('shortcode')->register('article-section', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.article.section', [
+                'id'      => $shortcode->id,
                 'content' => $content
             ])->render();
         });
 
         app('shortcode')->register('article-text-container', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.article.text-container', [
-                'content' => $content
+                'content' => $content,
+                'class'   => $shortcode->class ?? 'mb-10'
             ])->render();
         });
 
@@ -67,9 +81,27 @@ class ShortcodeServiceProvider extends ServiceProvider
             ])->render();
         });
 
+        app('shortcode')->register('article-h3', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.article.h3', [
+                'title' => $shortcode->title ?? $content
+            ])->render();
+        });
+
         app('shortcode')->register('article-p', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.article.p', [
                 'text' => $content
+            ])->render();
+        });
+
+        app('shortcode')->register('article-list', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.article.list', [
+                'content' => $content
+            ])->render();
+        });
+
+        app('shortcode')->register('article-list-item', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.article.list-item', [
+                'content' => $content
             ])->render();
         });
         

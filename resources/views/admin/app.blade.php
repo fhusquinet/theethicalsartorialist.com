@@ -7,6 +7,7 @@
 
         <title>Admin | The Ethical Sartorialist</title>
         <link rel="stylesheet" type="text/css" href="{{ asset( mix('css/admin.css') ) }}" />
+        @stack ('styles')
     </head>
     <body class="bg-body relative">
 
@@ -40,5 +41,6 @@
         </div>
         
         <script type="text/javascript" src="{{ asset( mix('js/admin.js') ) }}"></script>
+        @stack ('scripts')
     </body>
 </html>

@@ -179,15 +179,15 @@ if ( ! function_exists('navigation') )
                 'text' => 'Latest articles'
             ],
             [
-                'url' => '#',
+                'url' => route('page', 'ethical-guide'),
                 'text' => 'Ethical guide'
             ],
             [
-                'url' => '#',
+                'url' => route('page', 'about'),
                 'text' => 'About'
             ],
             [
-                'url' => '#',
+                'url' => route('page', 'contact'),
                 'text' => 'Contact'
             ]
         ];

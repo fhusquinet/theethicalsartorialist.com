@@ -7,7 +7,7 @@
     @isset ( $field['multiple'] )
         multiple
     @endisset
-    class="border border-grey py-4 px-6 text-base font-thin text-grey rounded-lg focus:outline-none w-full max-w-sm"
+    class="js-choice border border-grey py-4 px-6 text-base font-thin text-grey rounded-lg focus:outline-none w-full max-w-sm"
 >
     @foreach ( $field['options'] as $option )
         <option

@@ -1,39 +1,33 @@
 @extends ('app')
 
-@section ('top-content')
-    @component ('_components.header', ['image' => $article->getImageId()])
-        @slot ('title')
-            {{ $article->title }}
-        @endslot
-        
-        @if ( $article->category() )
-            @slot ('subtitle')
-                <a href="{{ $article->category()->getUrl() }}" class="text-white no-underline hover:underline">{{ $article->category()->title }}</a>
-            @endslot
-        @endif
-
-        @slot ('footer')
-            <div class="relative z-10">
-                <div class="container py-4 px-8">
-                    <div class="text-base md:text-sm font-thin text-grey clearfix">
-                        <div class="relative z-10 block md:inline md:float-left transition--fast mb-4 md:mb-0">
-                            <img class="inline h-4 w-4 align-text-top mr-1" src="{{ asset('icons/hourglass--white.svg') }}" alt="Article estimated reading time"/>
-                            {{ $article->reading_time }} min. read
-                        </div>
-                        <div class="relative z-10 block md:inline md:float-right transition--fast">
-                            <img class="inline h-4 w-4 align-text-top mr-1" src="{{ asset('icons/calendar--white.svg') }}" alt="Article date" />
-                            {{ $article->date() }}
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute pin bg-black opacity-25 z-2"></div>
-            </div>
-        @endslot
-    @endcomponent
-@endsection
-
 @section ('content')
-    <div class="mb-10 md:pt-4 lg:pt-12 bg-white shadow">
+    <div class="mb-10 pt-12 bg-white shadow">
+
+        <div class="px-8">
+            <div class="text-container mb-4">
+                <h1 class="text-grey-darkest font-thin text-2xl text-center">{{ $article->title }}</h1>
+                @if ( $article->category() )
+                    <h2 class="text-grey-darker font-thin text-center">
+                        <a href="{{ $article->category()->getUrl() }}" class="text-grey-dark text-base no-underline hover:underline">{{ $article->category()->title }}</a>
+                    </h2>
+                @endif
+            </div>
+        </div>
+
+        <div class="container p-4">
+            <div class="text-base md:text-sm font-thin text-grey clearfix">
+                <div class="relative z-10 block md:inline text-center md:text-left md:float-left transition--fast mb-4 md:mb-0">
+                    <img class="inline h-4 w-4 align-text-top mr-1 opacity-50" src="{{ asset('icons/hourglass.svg') }}" alt="Article estimated reading time"/>
+                    {{ $article->reading_time }} min. read
+                </div>
+                <div class="relative z-10 block md:inline text-center md:text-left md:float-right transition--fast">
+                    <img class="inline h-4 w-4 align-text-top mr-1 opacity-50" src="{{ asset('icons/calendar.svg') }}" alt="Article date" />
+                    {{ $article->date() }}
+                </div>
+            </div>
+        </div>
+
+        [image id="{{ $article->getHeaderImageId() }}"]
 
         {!! $article->text !!}
         

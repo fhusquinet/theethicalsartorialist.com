@@ -25,7 +25,7 @@
                     {{ $slot ?? '' }}
                 </div>
                 <div class="hidden md:block w-full md:w-1/2 px-4 lg:pr-24">
-                    <img src="{{ $image ?? asset('icons/sad.svg') }}" class="w-full h-full mx-auto block" />
+                    <img src="{{ $image ?? asset('icons/sad.svg') }}" class="w-full h-full mx-auto block" alt="{{ $title ?? ':(' }}" />
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <div class="card card--article {{ $class ?? '' }} bg-white group shadow transition--fast relative pb-12">
     
     <div class="card__image card--article__image relative overflow-hidden">
-        [image id="{{ $article->getImageId() }}" class="card__image__background img-cover b-lazy"]
+        [image id="{{ $article->getPreviewImageId() }}" class="card__image__background img-cover b-lazy"]
         <div class="absolute pin bg-black opacity-0 group-hover:opacity-50 transition--fast"></div>
         @if ( $article->category() )
             <a href="{{ $article->category()->getUrl() }}" class="absolute opacity-0 group-hover:opacity-100 no-underline text-white bg-primary hover:bg-primary-dark pin-b pin-l py-2 px-4 z-20 transition--fast -mb-4 group-hover:mb-0">

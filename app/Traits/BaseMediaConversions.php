@@ -67,29 +67,6 @@ trait BaseMediaConversions
     }
 
     /**
-     * Return the images formatted for the image uploader.
-     */
-    public function getFormattedImages()
-    {
-        $images = collect([]);
-        foreach ( $this->getImages() as $media ) {
-            $images->push([
-                'name' => $media->file_name,
-                'source' => $media->getUrl()
-            ]);
-        }
-        return $images;
-    }
-
-    /**
-     * Load the formatted images as an attribuet.
-     */
-    public function loadFormattedImages()
-    {
-        $this->images = $this->getFormattedImages();
-    }
-
-    /**
      * Return the all images stored.
      */
     public function getImages()
@@ -122,14 +99,47 @@ trait BaseMediaConversions
     }
 
     /**
+     * Return the id of the first image stored.
+     */
+    public function getHeaderImageId()
+    {
+        return $this->getHeaderImage() ? $this->getHeaderImage()->id : null;
+    }
+
+    /**
+     * Return the id of the first image stored.
+     */
+    public function getPreviewImageId()
+    {
+        return $this->getPreviewImage() ? $this->getPreviewImage()->id : null;
+    }
+
+    /**
+     * Return the header media class.
+     */
+    public function getHeaderImage()
+    {
+        return $this->getFirstMedia('images', ['header' => 'yes']);
+    }
+
+    /**
+     * Return the preview media class.
+     */
+    public function getPreviewImage()
+    {
+        return $this->getFirstMedia('images', ['preview' => 'yes']);
+    }
+
+    /**
      * Set the image
      */
-    public function setImage($file)
+    public function setImage($file, $properties = [])
     {
         if ( ! $file ) {
             return $this;
         }
         return $this->addMediaFromMixed($file)
+                    ->withCustomProperties($properties)
                     ->withResponsiveImages()
                     ->toMediaCollection('images');
     }
@@ -146,11 +156,33 @@ trait BaseMediaConversions
     }
 
     /**
+     * Replace the existing image (if there is) by a new one.
+     */
+    public function replaceHeaderImage($file)
+    {
+        if ( $current = $this->fresh()->getHeaderImage() ) {
+            $current->delete();
+        }
+        return $this->setImage($file, ['header' => 'yes']);
+    }
+
+    /**
+     * Replace the existing image (if there is) by a new one.
+     */
+    public function replacePreviewImage($file)
+    {
+        if ( $current = $this->fresh()->getPreviewImage() ) {
+            $current->delete();
+        }
+        return $this->setImage($file, ['preview' => 'yes']);
+    }
+
+    /**
      * Alias for the setImage method
      */
-    public function addImage($file)
+    public function addImage($file, $properties = [])
     {
-     	return $this->setImage($file);
+     	return $this->setImage($file, $properties);
     }
 
     /**
@@ -201,58 +233,30 @@ trait BaseMediaConversions
     }
 
     /**
-     * Return the first image stored in extra large size.
+     * Return the first image stored.
      */
-    public function getExtraLargeImageUrl()
+    public function getHeaderImageUrl($size = 'large')
     {
-        return $this->getImageUrl('x-large');
+        if ( ! $header = $this->getHeaderImage() ) {
+            return null;
+        }
+        if ( ! File::exists( $header->getPath($size) ) ) {
+            $size = '';
+        }
+        return asset($header->getUrl($size));
     }
 
     /**
-     * Return the first image stored in large size.
+     * Return the first image stored.
      */
-    public function getLargeImageUrl()
+    public function getPreviewImageUrl($size = 'large')
     {
-        return $this->getImageUrl('large');
-    }
-
-    /**
-     * Return the first image stored in medium size.
-     */
-    public function getMediumImageUrl()
-    {
-        return $this->getImageUrl('medium');
-    }
-
-    /**
-     * Return the first image stored in small size.
-     */
-    public function getSmallImageUrl()
-    {
-        return $this->getImageUrl('small');
-    }
-
-    /**
-     * Return the first image stored in extra small.
-     */
-    public function getExtraSmallImageUrl()
-    {
-        return $this->getImageUrl('x-small');
-    }
-
-    /**
-     * Return the first image stored in thumbnail.
-     */
-    public function getThumbnailImageUrl()
-    {
-        return $this->getImageUrl('thumbnail');
-    }
-
-    /**
-     * Return the first image stored in blur.
-     */
-    public function getBlurImageUrl()
-    {
-        return $this->getImageUrl('blur');
+        if ( ! $preview = $this->getPreviewImage() ) {
+            return null;
+        }
+        if ( ! File::exists( $preview->getPath($size) ) ) {
+            $size = '';
+        }
+        return asset($preview->getUrl($size));
     }
 }

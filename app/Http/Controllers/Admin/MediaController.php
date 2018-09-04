@@ -16,7 +16,7 @@ class MediaController extends Controller
      */
     public function index()
     {
-        $medias = Media::latest()->get();
+        $medias = site()->getImages();
 
         return view('admin.medias.index', [
             'medias' => $medias
@@ -41,23 +41,41 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-        site()->addImage($request->media);
+        foreach ( $request->medias as $media ) {
+            site()->addImage($media);
+        }
 
         return redirect()->route('admin.medias.index')
-                         ->with('success', 'The media has been created.');
+                         ->with('success', 'The media(s) have been created.');
     }
 
     /**
-     * Display the specified resource.
+     * Display the form to edit the specified resource.
      *
      * @param  Spatie\MediaLibrary\Models $media
      * @return \Illuminate\Http\Response
      */
-    public function show(Media $media)
+    public function edit(Media $media)
     {
-        return view('admin.medias.show', [
+        return view('admin.medias.edit', [
             'media' => $media
         ])->withoutShortcodes();
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  Spatie\MediaLibrary\Models $media
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Media $media)
+    {
+        $media->setCustomProperty('alt', $request->alt);
+        $media->save();
+
+        return redirect()->route('admin.medias.edit', $media)
+                         ->with('success', 'The media #'.$media->id.' has been updated.');
     }
 
     /**

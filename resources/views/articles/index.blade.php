@@ -2,9 +2,8 @@
 
 @section ('top-content')
     @component ('_components.header')
-        @slot ('title')
-            Latest articles
-        @endslot
+        @slot ('title', 'Latest articles')
+        @slot ('text', 'Find my latest articles here')
     @endcomponent
 @endsection
 

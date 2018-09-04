@@ -944,10 +944,18 @@ table {
   padding-top: 70px;
 }
 
+.main-container {
+  max-width: 860px;
+}
+
 .text-container {
   margin: 0 auto;
   max-width: 650px;
   width: 100%;
+}
+
+.text-container p:last-of-type {
+  margin-bottom: 0;
 }
 
 .sidebar__about__background {

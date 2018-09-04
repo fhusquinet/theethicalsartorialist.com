@@ -1,0 +1,1 @@
+<ul class="list-reset">{!! $content !!}</ul>

@@ -9,11 +9,11 @@
             <div class="p-8">
                 <div>
                     <label class="block mb-6 text-grey font-normal text-base inline-block">
-                        Your image
+                        Your image(s)
                     </label>
                 </div>
                 <div>
-                    <input type="file" name="media" /> 
+                    <input type="file" name="medias[]" multiple/> 
                 </div>
             </div>
             <div class="bg-grey-lighter py-4 px-6 text-right">

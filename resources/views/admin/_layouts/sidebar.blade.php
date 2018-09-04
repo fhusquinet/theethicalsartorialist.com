@@ -28,7 +28,7 @@
             'icon' => asset('icons/admin/tags.svg')
         ])
         @include ('admin._layouts.sidebar.link', [
-            'url'  => route('admin.show'),
+            'url'  => route('admin.medias.index'),
             'text' => 'Media Library',
             'icon' => asset('icons/admin/media.svg')
         ])

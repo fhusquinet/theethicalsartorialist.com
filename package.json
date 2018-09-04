@@ -27,6 +27,7 @@
   "dependencies": {
     "baguettebox.js": "^1.10.0",
     "blazy": "^1.8.2",
+    "choices.js": "^3.0.4",
     "tailwindcss": "^0.6.3"
   }
 }

@@ -1,7 +1,7 @@
 @include ('admin.crud.form', array_merge([
-    'model' => $tag,
-    'button' => 'Create tag',
-    'action' => route('admin.tags.store'),
+    'model' => $media,
+    'button' => 'Create media',
+    'action' => route('admin.medias.store'),
     'fields' => [
         'name' => [
             'label' => 'Title',

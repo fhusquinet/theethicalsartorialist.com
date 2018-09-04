@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-control" content="public">
 
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('apple-icon-57x57.png') }}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('apple-icon-60x60.png') }}">
@@ -35,7 +36,7 @@
             <main class="main-content">
                 @yield ('top-content')
                 @section ('content-container')
-                    <div class="container px-4 py-8">
+                    <div class="container main-container px-4 py-8">
                         @yield ('content')
                     </div>
                 @show

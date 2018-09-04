@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomepageController@show')->name('homepage');
 
+Route::get('pages/{slug}', 'PageController@show')->name('page');
+
 Route::paginate('articles', 'ArticleController@index')->name('articles.index');
 
 Route::get('articles/{article}', 'ArticleController@show')->name('articles.show');
@@ -28,7 +30,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::post('login', 'Auth\LoginController@login')->name('login');
     Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
-    Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function () {
+    Route::group(['middleware' => ['auth', 'doNotCacheResponse'], 'namespace' => 'Admin',], function () {
         Route::get('/', 'DashboardController@show')->name('show');
         
         Route::resource('articles', 'ArticleController')->parameters([

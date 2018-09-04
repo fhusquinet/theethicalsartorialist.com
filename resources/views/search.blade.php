@@ -12,6 +12,10 @@
             @slot ('title')
                 Articles matching the search "{{ $query }}"
             @endslot
+            
+            @slot ('text')
+                You can always start a new search in case these results do not satisty your needs
+            @endslot
         @endcomponent
     @endsection
 

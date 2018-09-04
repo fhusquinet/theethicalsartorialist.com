@@ -1,3 +1,3 @@
-<div class="p-8">
+<div @if ( $id ) id="{{ $id }}" @endif class="p-8">
     {!! $content !!}
 </div>

@@ -2,7 +2,7 @@
     <div class="bg-primary-darker">
         <a class="no-underline" href="http://www.instagram.com">
             <div class="container p-4 text-center">
-                <img class="mx-auto mb-2 w-6 h-6" src="{{ asset('icons/instagram--white.svg') }}" />
+                <img class="mx-auto mb-2 w-6 h-6" src="{{ asset('icons/instagram--white.svg') }}" alt="The Ethical Sartorialist instagram account" />
                 <p class="text-white font-thin text-sm">
                     Discover more on
                     <span class="font-normal">Instagram</span>
@@ -28,7 +28,7 @@
                     @foreach ( get_latest_articles() as $article )
                         <a class="group flex flex-row w-full mb-4 no-underline" href="{{ $article->getUrl() }}">
                             <div class="flex-no-shrink w-12 h-12 relative">
-                                <img class="img-cover" src="{{ $article->getImageUrl('thumbnail') }}" />
+                                <img class="img-cover" src="{{ $article->getImageUrl('thumbnail') }}" alt="{{ $article->title }}" />
                             </div>
                             <span class="pl-4 flex-grow w-full align-middle no-underline text-grey font-thin group-hover:text-grey-dark">{{ $article->title }}</span>
                         </a>

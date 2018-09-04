@@ -14,8 +14,7 @@
         ],
         'text' => [
             'label' => 'Text',
-            'type'  => 'textarea',
-            'height' => 600
+            'type'  => 'editor',
         ],
         'categories' => [
             'label'   => 'Category',
@@ -31,10 +30,15 @@
             'option_column' => 'name',
             'option_value'  => 'name'
         ],
-        'image' => [
-            'label' => 'Image',
+        'header_image' => [
+            'label' => 'Header Image',
             'type'  => 'image',
-            'current' => $article->getImageUrl()
+            'current' => $article->getHeaderImageUrl()
+        ],
+        'preview_image' => [
+            'label' => 'Preview Image',
+            'type'  => 'image',
+            'current' => $article->getPreviewImageUrl()
         ],
         'is_published' => [
             'label' => 'Mark as published',
@@ -42,3 +46,30 @@
         ]
     ]
 ], $options))
+
+@push ('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-monokai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/mode-html.js"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/html");
+        var input = document.getElementById('editor-value');
+        editor.getSession().on("change", function () {
+            input.value = editor.getSession().getValue();
+        });
+    </script>
+@endpush
+
+@push ('styles')
+    <style>
+        #editor { 
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+@endpush
