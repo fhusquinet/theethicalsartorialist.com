@@ -8,6 +8,7 @@
 @endsection
 
 @section ('content-container')
+            [image id=137]
     @component ('pages._partials.section-img-left', ['class' => ''])
         @slot ('image')
             [image id=137]
