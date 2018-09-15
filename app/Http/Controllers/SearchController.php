@@ -19,11 +19,9 @@ class SearchController extends Controller
     {
         $articles = Cache::remember('search-'.request()->get('query'), 1440, function ()
         {
-            return Article::whereLike('title', request()->get('query'))
-                            ->orWhereLike('text', request()->get('query'))
-                            ->latest()
-                            ->with('categories', 'tags', 'media')
-                            ->paginate(12);
+            return Article::search( request()->get('query') )
+                ->paginate(12)
+                ->load('categories', 'tags', 'media');
         });
         
         return view('search', [

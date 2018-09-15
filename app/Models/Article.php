@@ -3,13 +3,15 @@
 namespace App\Models;
 
 use App\Scopes\PublishedScope;
+use Laravel\Scout\Searchable;
 use Spatie\Tags\HasTags;
 
 use Cache;
 
 class Article extends BaseModel
 {
-    use HasTags;
+    use HasTags,
+        Searchable;
 
     /**
      * The attributes that should be cast to native types.
@@ -19,6 +21,20 @@ class Article extends BaseModel
     protected $casts = [
         'is_published' => 'boolean',
     ];
+
+    /**
+     * Get the indexable data array for the model.
+     *
+     * @return array
+     */
+    public function toSearchableArray()
+    {
+        return [
+            'title' => $this->title,
+            'categories' => implode(',', $this->categories->pluck('title')->toArray()),
+            'tags' => implode(',', $this->tags->pluck('title')->toArray())
+        ];
+    }
 
     /**
      * The "booting" method of the model.
