@@ -1,0 +1,17 @@
+.navigation {
+
+    &__item {
+        @apply .relative;
+
+        &:after {
+            @apply .absolute .bg-primary .pin-b .pin-center-x .opacity-0 .transition--fast;
+            content: '';
+            height: 2px;
+            width: 0;
+        }
+
+        &:hover:after {
+            @apply .w-full .opacity-100;
+        }
+    }
+}
