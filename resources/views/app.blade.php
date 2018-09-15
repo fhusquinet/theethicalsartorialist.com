@@ -36,7 +36,7 @@
             <main class="main-content">
                 @yield ('top-content')
                 @section ('content-container')
-                    <div class="container main-container px-4 py-8">
+                    <div class="container main-container px-8 py-8">
                         @yield ('content')
                     </div>
                 @show

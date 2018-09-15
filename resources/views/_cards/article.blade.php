@@ -12,10 +12,10 @@
 
     <div class="card__content-container {{ $classContent ?? '' }}">
         <div class="pt-6 px-6 card__content card--article__content {{ $classContent ?? '' }}">
-            <h2 class="card__content__title font-normal text-grey-dark text-xl mb-2 group-hover:text-grey-darker transition--fast relative">
+            <h2 class="card__content__title font-thin text-grey-darker text-xl mb-2 group-hover:text-grey-darkest transition--fast relative">
                 {{ $article->title }}
             </h2>
-            <p class="font-thin text-grey-dark text-base md:text-sm leading-normal">
+            <p class="font-thin text-grey-darker text-base md:text-sm leading-normal">
                 {{ $article->preview_text }} <a href="{{ $article->getUrl() }}" class="ml-2 inline-block no-underline text-primary"><span class="inline-block pb-05 border-b border-primary">Read more</span> ></a>
             </p>
         </div>

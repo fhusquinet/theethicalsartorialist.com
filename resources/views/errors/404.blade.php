@@ -26,7 +26,7 @@
 
         @slot ('after')
             <div class="bg-body">
-                <div class="container px-4 pt-16 pb-8">
+                <div class="container px-8 pt-16 pb-8">
                     <h2 class="text-grey-dark text-center text-2xl sm:text-3xl leading-tight font-thin mb-8">Latest articles</h2>
                     @include ('_partials.articles-list', [
                         'articles' => get_latest_articles(3),

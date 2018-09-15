@@ -7,6 +7,7 @@
     <div class="absolute pin-center-y pin-l pin-r z-50">
         <div class="container px-12 max-w-md">
             @include ('_partials.search-form', [
+                'labelClass' => 'text-white',
                 'inputSize' => 'py-4 pr-8 pl-16'
             ])
         </div>

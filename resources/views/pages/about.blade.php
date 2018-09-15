@@ -26,7 +26,7 @@
         @endslot
     @endcomponent
     <div class="relative bg-white py-12">
-        <div class="container px-4">
+        <div class="container px-8">
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/2 py-12 md:border-r md:border-grey-lighter md:pr-12">
                     <p class="text-grey-dark font-thin leading-loose mb-2 text-lg">

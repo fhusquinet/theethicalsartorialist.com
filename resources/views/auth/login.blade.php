@@ -1,7 +1,7 @@
 @extends ('app')
 
 @section ('content')
-    <div class="container px-4 max-w-sm">
+    <div class="container px-8 max-w-sm">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full px-4">
                 <div class="bg-white shadow px-4 py-8">

@@ -1,9 +1,10 @@
 <form action="{{ route('search') }}" class="w-full">
+    <label for="search-input" class="block mb-4 font-thin @if ( isset($labelClass) ) {{ $labelClass }} @else text-grey-dark @endif">Your search query</label>
     <div class="flex relative">
         <input
             id="search-input"
             class="transition focus:outline-0 border border-white focus:bg-white focus:border-grey-light placeholder-grey-darkest rounded bg-grey-lighter {{ $inputSize ?? 'py-2 pr-4 pl-12' }} block w-full appearance-none leading-normal ds-input focus:outline-none"
-            placeholder="Your query"
+            placeholder="Ex: Asket"
             name="query"
             @isset ( $query) value="{{ $query }}" @endisset
         />

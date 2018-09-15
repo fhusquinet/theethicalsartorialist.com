@@ -1,6 +1,6 @@
 <div class="bg-white min-h-screen pt-navigation relative">
     <div class="{{ $containerClass ?? 'absolute pin-center-y pin-l pin-r' }}">
-        <div class="container px-4 py-32">
+        <div class="container px-8 py-32">
             <div class="flex flex-col md:flex-row-reverse -mx-4">
                 <div class="w-full md:w-1/2 md:pl-12 px-4 text-center md:text-left">
                     

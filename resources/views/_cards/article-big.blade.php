@@ -13,11 +13,11 @@
     <div class="card__content-container w-full md:w-3/5 lg:w-2/3 {{ $classContent ?? '' }}">
         <div class="md:h-full">
             <div class="pt-6 md:pt-8 md:pb-12 px-6 card__content card--article__content {{ $classContent ?? '' }}">
-                <h2 class="card__content__title font-normal text-grey-dark text-xl mb-4 group-hover:text-grey-darker transition--fast relative">
+                <h2 class="card__content__title font-thin text-grey-darker text-xl mb-4 group-hover:text-grey-darkest transition--fast relative">
                     {{ $article->title }}
                 </h2>
-                <p class="font-thin text-grey-dark text-base md:text-sm leading-normal">
-                    {{ $article->preview_text }} <a href="{{ $article->getUrl() }}" class="ml-2 inline-block no-underline text-primary"><span class="inline-block pb-05 border-b border-primary">Read more</span> ></a>
+                <p class="font-thin text-grey-darker text-base md:text-sm leading-normal">
+                    {{ $article->preview_text }} <a href="{{ $article->getUrl() }}" class="ml-2 inline-block no-underline text-primary-dark"><span class="inline-block pb-05 border-b border-primary">Read more</span> ></a>
                 </p>
             </div>
             <div class="py-4 px-6 w-full">
