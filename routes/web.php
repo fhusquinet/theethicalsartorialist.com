@@ -25,6 +25,8 @@ Route::paginate('tags/{slug}', 'TagController@show')->name('tags.show');
 
 Route::paginate('/search', 'SearchController@show')->name('search');
 
+Route::post('contact', 'ContactController@store')->name('contact');
+
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('login.show');
     Route::post('login', 'Auth\LoginController@login')->name('login');
