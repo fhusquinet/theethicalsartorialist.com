@@ -6,7 +6,7 @@
 
 @section ('main')
     @component ('_components.empty-card', [
-        'image' => asset('icons/404.svg'),
+        'image' => asset('icons/404_bubbles.svg'),
         'containerClass' => ''
     ])
         
