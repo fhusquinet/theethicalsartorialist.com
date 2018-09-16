@@ -77,4 +77,28 @@ class CacheTest extends TestCase
         $this->assertNotNull($image->id);
         $this->assertTrue(Cache::has('image-'.$image->id));
     }
+
+    /**
+     * @test
+     */
+    public function updating_an_image_will_remove_it_from_the_cache()
+    {
+        $article = factory(Article::class)->create(['is_published' => false]);
+        $article->addImage('https://wikipedia.org/static/images/project-logos/enwiki-2x.png');
+        
+        $image = $article->getImage();
+        $image->setCustomProperty('caching', true);
+        $image->save();
+
+        get_image( $article->getImageId() );
+        $this->assertTrue(Cache::has('image-'.$image->id));
+
+        $image->setCustomProperty('caching', false);
+        $image->save();
+        
+        $this->assertFalse(Cache::has('image-'.$image->id));
+
+        get_image( $article->getImageId() );
+        $this->assertTrue(Cache::has('image-'.$image->id));
+    }
 }

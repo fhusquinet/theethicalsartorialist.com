@@ -18,8 +18,7 @@ class Media extends BaseMedia
     {
         parent::boot();
         
-        self::updating(function ($image) {
-            var_dump($image->id);
+        self::updated(function ($image) {
             Cache::forget('image-'.$image->id);
         });
     }

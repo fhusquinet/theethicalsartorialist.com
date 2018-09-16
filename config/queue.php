@@ -34,6 +34,10 @@ return [
             'driver' => 'sync',
         ],
 
+        'drop' => [
+            'driver' => 'null',
+        ],
+
         'database' => [
             'driver' => 'database',
             'table' => 'jobs',

@@ -33,7 +33,10 @@ if ( ! function_exists('get_image') ) {
         if ( ! $id ) {
             return;
         }
-        return Spatie\MediaLibrary\Models\Media::where('id', $id)->first();
+        return Cache::rememberForever('image-'.$id, function () use ($id) {
+            $model = config('medialibrary.media_model');
+            return $model::where('id', $id)->first();	
+        });
     }
 }
 
