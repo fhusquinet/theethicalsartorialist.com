@@ -8,9 +8,9 @@
 @endsection
 
 @section ('content-container')
-    @component ('pages._partials.section-img-left', ['class' => ''])
+    @component ('pages._partials.section-img-left', ['imageClass' => 'hidden md:block', 'class' => ''])
         @slot ('image')
-            [image id=137]
+            [image class="img-cover b-lazy" id=145]
         @endslot
         @slot ('text')
             <h3 class="text-grey-dark font-thin leading-loose mb-4 text-2xl lg:text-3xl">Hi! I'm Florian, nice to meet you :)</h3>

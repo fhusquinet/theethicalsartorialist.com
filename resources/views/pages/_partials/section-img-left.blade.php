@@ -1,5 +1,5 @@
 <div class="relative {{ $class ?? 'bg-white' }}">
-    <div class="w-full md:w-2/5 h-64 md:h-auto overflow-hidden relative md:absolute md:pin-b md:pin-t md:pin-l">
+    <div class="w-full md:w-2/5 {{ $imageClass ?? '' }} h-64 md:h-auto overflow-hidden relative md:absolute md:pin-b md:pin-t md:pin-l">
         {!! $image !!}
     </div>
     <div class="container px-8">
