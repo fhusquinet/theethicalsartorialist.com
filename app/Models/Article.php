@@ -31,8 +31,10 @@ class Article extends BaseModel
     {
         return [
             'title' => $this->title,
+            'text' => $this->preview_text,
             'categories' => implode(',', $this->categories->pluck('title')->toArray()),
-            'tags' => implode(',', $this->tags->pluck('title')->toArray())
+            'tags' => implode(',', $this->tags->pluck('title')->toArray()),
+            'created_at' => $this->created_at->toDateTimeString()
         ];
     }
 
