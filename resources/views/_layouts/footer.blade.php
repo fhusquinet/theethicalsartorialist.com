@@ -28,7 +28,7 @@
                     @foreach ( get_latest_articles() as $article )
                         <a class="group flex flex-row w-full mb-4 no-underline" href="{{ $article->getUrl() }}">
                             <div class="flex-no-shrink w-12 h-12 relative">
-                                <img class="img-cover" src="{{ $article->getImageUrl('thumbnail') }}" alt="{{ $article->title }}" />
+                                <img class="img-cover b-lazy" src="{{ $article->getImageUrl('blur') }}" data-src="{{ $article->getImageUrl('thumbnail') }}" alt="{{ $article->title }}" />
                             </div>
                             <span class="pl-4 flex-grow w-full align-middle no-underline text-grey-darker font-thin group-hover:text-grey-dark">{{ $article->title }}</span>
                         </a>
