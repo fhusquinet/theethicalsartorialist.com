@@ -68,7 +68,7 @@ class ArticleTest extends TestCase
         $article->categories()->attach($category->id);
         
         $this->assertEquals(
-            $article->category()->id,
+            $article->fresh()->category()->id,
             $category->id
         );
     }
