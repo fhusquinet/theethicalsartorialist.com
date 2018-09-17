@@ -24,6 +24,12 @@ class ShortcodeServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        app('shortcode')->register('i', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.italic', [
+                'content' => $content
+            ])->render();
+        });
+
         app('shortcode')->register('b', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.bold', [
                 'content' => $content
@@ -108,6 +114,13 @@ class ShortcodeServiceProvider extends ServiceProvider
         app('shortcode')->register('article-image-description', function($shortcode, $content, $compiler, $name, $viewData) {
             return view('_shortcodes.article.image-description', [
                 'description' => $shortcode->description ?? $content
+            ])->render();
+        });
+
+        app('shortcode')->register('article-link', function($shortcode, $content, $compiler, $name, $viewData) {
+            return view('_shortcodes.article.link', [
+                'content' => $content,
+                'link'    => $shortcode->link ?? '#'
             ])->render();
         });
     }

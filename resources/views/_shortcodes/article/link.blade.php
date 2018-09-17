@@ -1,0 +1,1 @@
+<a href="{{ $link }}" class="text-underline text-primary-darker hover:text-primary-darkest transition--fast">{!! $content !!}</a>
