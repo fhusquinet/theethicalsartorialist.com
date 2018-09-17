@@ -49,7 +49,7 @@ class ArticleController extends Controller
     {
         $article = $this->save(new Article(), $request->all());
 
-        return redirect()->route('admin.articles.index')
+        return redirect()->back()
                          ->with('success', 'The article #'.$article->id.' has been created.');
     }
 
@@ -90,7 +90,7 @@ class ArticleController extends Controller
     {
         $article = $this->save($article, $request->all());
 
-        return redirect()->route('admin.articles.index')
+        return redirect()->back()
                          ->with('success', 'The article #'.$article->id.' has been updated.');
     }
 
