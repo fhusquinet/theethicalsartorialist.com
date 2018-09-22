@@ -1,3 +1,10 @@
+@php
+    $meta = [
+        'title'    => 'About',
+        'og:title' => 'About'
+    ];
+@endphp
+
 @extends ('app')
 
 @section ('top-content')

@@ -36,26 +36,26 @@
             <meta name="keywords" content="Ethical fashion, sartorial, review, blog, articles, mode, menswear, style, men style">
         @endif
 
-        @if ( isset($meta['og_title']) && !empty($meta['og_title']) )
-            <meta property="og:title" content="{{ $meta['og_title'] }}">
+        @if ( isset($meta['og:title']) && !empty($meta['og:title']) )
+            <meta property="og:title" content="{{ $meta['og:title'] }}">
         @else
             <meta property="og:title" content="The Ethical Sartorialist - Ethical fashion with a sartorial touch made simple">
         @endif
 
-        @if ( isset($meta['og_url']) && !empty($meta['og_url']) )
-            <meta property="og:url" content="{{ $meta['og_url'] }}">
+        @if ( isset($meta['og:url']) && !empty($meta['og:url']) )
+            <meta property="og:url" content="{{ $meta['og:url'] }}">
         @else
             <meta property="og:url" content="{{ url()->current() }}">
         @endif
 
-        @if ( isset($meta['og_image']) && !empty($meta['og_image']) )
-            <meta property="og:image" content="{{ asset($meta['og_image']) }}">
+        @if ( isset($meta['og:image']) && !empty($meta['og:image']) )
+            <meta property="og:image" content="{{ asset($meta['og:image']) }}">
         @else
             <meta property="og:image" content="{{ asset('images/meta/og.jpg') }}">
         @endif
 
-        @if ( isset($meta['og_description']) && !empty($meta['og_description']) )
-            <meta property="og:description" content="{{ $meta['og_description'] }}">
+        @if ( isset($meta['og:description']) && !empty($meta['og:description']) )
+            <meta property="og:description" content="{{ $meta['og:description'] }}">
         @else
             <meta property="og:description" content="An ethical approach to the sartorial style, made simple and accessible to everyone.">
         @endif

@@ -1,3 +1,7 @@
+@php
+    $meta = $article->getAllMetas();
+@endphp
+
 @extends ('app')
 
 @section ('content')

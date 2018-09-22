@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5474de96897b048b86d095c90312280",
+    "content-hash": "4b98cf0ca9f3637c7873c798cbcd8420",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -490,6 +490,63 @@
                 "parser"
             ],
             "time": "2018-03-08T01:11:30+00:00"
+        },
+        {
+            "name": "fhusquinet/laravel-model-seoable",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fhusquinet/laravel-model-seoable.git",
+                "reference": "2134242eadb2c7c6d375cf716ea20ab3fc47816e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fhusquinet/laravel-model-seoable/zipball/2134242eadb2c7c6d375cf716ea20ab3fc47816e",
+                "reference": "2134242eadb2c7c6d375cf716ea20ab3fc47816e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5.5.0|~5.6.0",
+                "illuminate/database": "~5.5.0|~5.6.0",
+                "illuminate/support": "~5.5.0|~5.6.0",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5.0|~3.6.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FHusquinet\\Seoable\\SeoableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FHusquinet\\Seoable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Husquinet",
+                    "email": "florian.husquinet@deegital.be",
+                    "homepage": "https://www.deegital.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily add seo meta data to your Eloquent model.",
+            "homepage": "https://github.com/fhusquinet/laravel-model-seoable",
+            "keywords": [
+                "fhusquinet",
+                "laravel-model-seoable"
+            ],
+            "time": "2018-09-22T16:54:56+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -5371,7 +5428,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3"
+        "php": "^7.2"
     },
     "platform-dev": []
 }

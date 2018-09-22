@@ -1,3 +1,7 @@
+@php
+    $meta = $category->getAllMetas();
+@endphp
+
 @extends ('app')
 
 @section ('top-content')

@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 use Spatie\MediaLibrary\Models\Media;
 
-class MediaController extends Controller
+class MediaController extends AdminController
 {
     /**
      * Display a listing of the resource.

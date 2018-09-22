@@ -3,11 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 use Spatie\Tags\Tag;
 
-class TagController extends Controller
+class TagController extends AdminController
 {
     /**
      * Display a listing of the resource.

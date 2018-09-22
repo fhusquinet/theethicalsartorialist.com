@@ -3,13 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 use App\Models\Article;
 use App\Models\Category;
 use Spatie\Tags\Tag;
 
-class ArticleController extends Controller
+class ArticleController extends AdminController
 {
     /**
      * Display a listing of the resource.
@@ -136,6 +135,10 @@ class ArticleController extends Controller
 
         $tags = $data['tags'] ?? [];
         unset($data['tags']);
+
+        $response = $this->setSeo($article, $data);
+        $data = $response['data'];
+        $article = $response['model'];
 
         $article->fill($data);
         $article->save();

@@ -1,3 +1,10 @@
+@php
+    $meta = [
+        'title'    => 'Ethical Guide',
+        'og:title' => 'Ethical Guide'
+    ];
+@endphp
+
 @extends ('app')
 
 @section ('top-content')

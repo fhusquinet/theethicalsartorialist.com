@@ -2,6 +2,13 @@
     if ( $articles->isEmpty() ) {
         $noNavigationShadow = true;
     }
+    $meta = [
+        'title'    => 'Search',
+        'og:title' => 'Search'
+    ];
+    if ( ! empty($query) ) {
+        $meta['title'] = $meta['og:title'] = 'Search results for ' . $query;
+    }
 @endphp
 
 @extends ('app')
