@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <div class="bg-primary-darker">
-        <a class="no-underline" href="http://www.instagram.com">
+        <a class="no-underline" href="http://instagram.com/theethicalsartorialist">
             <div class="container p-4 text-center">
                 <img class="mx-auto mb-2 w-6 h-6" src="{{ asset('icons/instagram--white.svg') }}" alt="The Ethical Sartorialist instagram account" />
                 <p class="text-white font-thin text-sm">
