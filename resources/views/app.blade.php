@@ -51,7 +51,7 @@
         @if ( isset($meta['og:image']) && !empty($meta['og:image']) )
             <meta property="og:image" content="{{ asset($meta['og:image']) }}">
         @else
-            <meta property="og:image" content="{{ asset('images/meta/og.jpg') }}">
+            <meta property="og:image" content="{{ asset('meta/og.jpg') }}">
         @endif
 
         @if ( isset($meta['og:description']) && !empty($meta['og:description']) )
