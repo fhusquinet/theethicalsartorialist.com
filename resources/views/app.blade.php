@@ -24,8 +24,53 @@
         <meta name="msapplication-TileImage" content="{{ asset('ms-icon-144x144.png') }}">
         <meta name="theme-color" content="#ffffff">
 
-        <title>The Ethical Sartorialist</title>
-        <meta name="description" content="An ethical approach to the sartorial style, made simple and accessible to everyone.">
+        @if ( isset($meta['description']) && !empty($meta['description']) )
+            <meta name="description" content="{{ $meta['description'] }}">
+        @else
+            <meta name="description" content="An ethical approach to the sartorial style, made simple and accessible to everyone.">
+        @endif
+
+        @if ( isset($meta['keywords']) && !empty($meta['keywords']) )
+            <meta name="keywords" content="{{ $meta['keywords'] }}">
+        @else
+            <meta name="keywords" content="Ethical fashion, sartorial, review, blog, articles, mode, menswear, style, men style">
+        @endif
+
+        @if ( isset($meta['og_title']) && !empty($meta['og_title']) )
+            <meta property="og:title" content="{{ $meta['og_title'] }}">
+        @else
+            <meta property="og:title" content="The Ethical Sartorialist - Ethical fashion with a sartorial touch made simple">
+        @endif
+
+        @if ( isset($meta['og_url']) && !empty($meta['og_url']) )
+            <meta property="og:url" content="{{ $meta['og_url'] }}">
+        @else
+            <meta property="og:url" content="{{ url()->current() }}">
+        @endif
+
+        @if ( isset($meta['og_image']) && !empty($meta['og_image']) )
+            <meta property="og:image" content="{{ asset($meta['og_image']) }}">
+        @else
+            <meta property="og:image" content="{{ asset('images/meta/og.jpg') }}">
+        @endif
+
+        @if ( isset($meta['og_description']) && !empty($meta['og_description']) )
+            <meta property="og:description" content="{{ $meta['og_description'] }}">
+        @else
+            <meta property="og:description" content="An ethical approach to the sartorial style, made simple and accessible to everyone.">
+        @endif
+
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en">
+        <meta property="og:site_name" content="{{ config('app.name') }}">
+
+        @if ( isset($meta['title']) && ! empty($meta['title']) )
+            <title>{{ $meta['title'] }} — The Ethical Sartorialist</title>
+        @else
+            <title>The Ethical Sartorialist - Ethical fashion with a sartorial touch made simple</title>
+        @endif
+        
+        
         <link rel="stylesheet" type="text/css" href="{{ asset( mix('css/app.css') ) }}" />
     </head>
     <body class="bg-body relative">
@@ -50,5 +95,15 @@
         @include ('_layouts.off-canvas-navigation')
         
         <script type="text/javascript" src="{{ asset( mix('js/app.js') ) }}"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126245303-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126245303-1');
+        </script>
+
     </body>
 </html>
