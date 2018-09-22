@@ -1,5 +1,6 @@
 @php
     $meta = $article->getAllMetas();
+    $meta['og:image'] = $article->getHeaderImage()->getUrl('x-large');
 @endphp
 
 @extends ('app')
