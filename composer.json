@@ -17,6 +17,7 @@
         "spatie/laravel-medialibrary": "^7.0.0",
         "spatie/laravel-paginateroute": "^2.7",
         "spatie/laravel-responsecache": "^4.4",
+        "spatie/laravel-sitemap": "^5.2",
         "spatie/laravel-tags": "^2.0",
         "webwizo/laravel-shortcodes": "^1.0"
     },
