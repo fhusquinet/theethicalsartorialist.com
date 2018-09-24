@@ -3,6 +3,9 @@
  */
 import baguetteBox from 'baguettebox.js';
 import Blazy from 'blazy';
+import images from './images';
+
+window.addEventListener('load', images);
 
 window.addEventListener('load', function() {
     baguetteBox.run('.gallery');

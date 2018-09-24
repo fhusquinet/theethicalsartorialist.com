@@ -9,13 +9,6 @@ function setImageSizes(image) {
     image.setAttribute('sizes', `${width}px`);
 }
 
-function handleIntersection(entries, observer) {
-    entries.filter(entry => entry.intersectionRatio > 0).forEach(entry => {
-        observer.unobserve(entry.target);
-        setImageSizes(entry.target);
-    });
-}
-
 function prepareForPrint() {
     $$('[srcset][sizes="1px"]').forEach(image => {
         setImageSizes(image);
@@ -23,12 +16,11 @@ function prepareForPrint() {
 }
 
 export default function() {
-    const observer = new IntersectionObserver(handleIntersection, {
-        rootMargin: '500px 0px',
-    });
-
     $$('[srcset][sizes="1px"]').forEach(image => {
-        observer.observe(image);
+        setImageSizes(image);
+    });
+    $$('[data-srcset][sizes="1px"]').forEach(image => {
+        setImageSizes(image);
     });
 
     let resizeTimer;
