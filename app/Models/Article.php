@@ -47,7 +47,9 @@ class Article extends BaseModel
     {
         parent::boot();
         
-        static::addGlobalScope(new PublishedScope);
+        if ( ! auth()->user() ) {
+            static::addGlobalScope(new PublishedScope);
+        }
 
         self::creating(function ($model) {
             $model->reading_time = calculate_reading_time($model->text);
