@@ -1,14 +1,21 @@
 <footer class="main-footer">
     <div class="bg-primary-darker">
-        <a class="no-underline" href="http://instagram.com/theethicalsartorialist">
-            <div class="container p-4 text-center">
-                <img class="mx-auto mb-2 w-6 h-6" src="{{ asset('icons/instagram--white.svg') }}" alt="The Ethical Sartorialist instagram account" />
-                <p class="text-white font-thin text-sm">
-                    Discover more on
-                    <span class="font-normal">Instagram</span>
-                </p>
+        <div class="container px-4 py-8 text-center">
+            <div class="text-center mb-4">
+                <a class="no-underline inline-block" target="_blank" rel="noopener" href="{{ config('social.instagram') }}">
+                    <img class="mx-2 w-8 h-8" src="{{ asset('icons/instagram--white.svg') }}" alt="The Ethical Sartorialist instagram account" />
+                </a>
+                <a class="no-underline" target="_blank" rel="noopener" href="{{ config('social.facebook') }}">
+                    <img class="mx-2 w-8 h-8" src="{{ asset('icons/facebook--white.svg') }}" alt="The Ethical Sartorialist facebook account" />
+                </a>
             </div>
-        </a>
+            <p class="text-white font-thin text-sm">
+                Discover more on
+                <a class="no-underline inline-block font-normal text-white hover:underline" target="_blank" rel="noopener" href="{{ config('social.instagram') }}">Instagram</a>
+                and
+                <a class="no-underline inline-block font-normal text-white hover:underline" target="_blank" rel="noopener" href="{{ config('social.facebook') }}">Facebook</a>
+            </p>
+        </div>
     </div>
     <div class="bg-white">
         <div class="container px-8 py-8">
