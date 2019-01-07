@@ -5,9 +5,11 @@
                 <h1 class="text-grey-darkest font-thin mb-4">
                     {{ $title }}
                 </h1>
-                <p class="text-grey-darker font-thin">
-                    {{ $text }}
-                </p>
+                @if ( isset($text) && ! empty($text) )
+                    <p class="text-grey-darker font-thin">
+                        {{ $text }}
+                    </p>
+                @endif
             </div>
         </div>
     </div>
