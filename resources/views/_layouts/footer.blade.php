@@ -24,9 +24,10 @@
                     <h4 class="text-grey-darkest font-thin text-xl md:text-2xl mb-4">
                         The ethical sartorialist
                     </h4>
-                    <p class="text-grey-darker font-thin text-base">
+                    <p class="text-grey-darker font-thin text-base mb-4">
                         I will explore different options throughout my posts ranging from regular brands to second hand going into the details of what makes a garment ethical or not.
                     </p>
+                    <a href="http://ethicalinfluencers.co.uk" target="_blank" rel="nofollow noopener"><img class="h-24 w-24" src="https://ethicalinfluencers.co.uk/wp-content/uploads/2018/05/EI-Member-Logo.gif" /></a>
                 </div>
                 <div class="w-full sm:w-1/2 lg:w-1/3 mb-12 sm:md-0 px-4">
                     <h4 class="text-grey-darkest font-thin text-xl md:text-2xl mb-4">
